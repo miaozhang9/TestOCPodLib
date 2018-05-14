@@ -1,0 +1,1 @@
+../../../YYStudio_LoanSDK/YYStudio_LoanSDK/QHLoanlib/scanNineBox/QHScanResultCollectionCell.h

@@ -1,0 +1,22 @@
+PODS:
+  - Loan_iOS_Custom_Framework (0.0.2):
+    - Loan_iOS_Custom_Framework/Loan_OCFTFaceDetect (= 0.0.2)
+  - Loan_iOS_Custom_Framework/Loan_OCFTFaceDetect (0.0.2)
+  - YYStudio_LoanSDK (0.0.6)
+
+DEPENDENCIES:
+  - Loan_iOS_Custom_Framework
+  - YYStudio_LoanSDK
+
+SPEC REPOS:
+  http://10.11.180.29/mobileDevelopers/YZT-Loan-Pod-Spec.git:
+    - Loan_iOS_Custom_Framework
+    - YYStudio_LoanSDK
+
+SPEC CHECKSUMS:
+  Loan_iOS_Custom_Framework: 6462b61b34962f87f06688a95e3870f72f3c3f51
+  YYStudio_LoanSDK: f23f5fac57626a560b0b92b3cdaba47758164dbf
+
+PODFILE CHECKSUM: 489125117564bfba3986196f09d1e4696e0c6e23
+
+COCOAPODS: 1.5.0

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		575379D6BBA2A612C32AC413 /* libPods-TestOCPodLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D730EA7655534B67AB5C3FCD /* libPods-TestOCPodLib.a */; };
+		5D01D23607C7747669B50715 /* Pods_TestOCPodLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F50AFF518117E3840AB01E /* Pods_TestOCPodLib.framework */; };
 		9B1AB20C20A5363D00FC9D1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1AB20B20A5363D00FC9D1E /* AppDelegate.m */; };
 		9B1AB20F20A5363D00FC9D1E /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B1AB20E20A5363D00FC9D1E /* ViewController.mm */; };
 		9B1AB21220A5363D00FC9D1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1AB21020A5363D00FC9D1E /* Main.storyboard */; };
@@ -28,7 +28,7 @@
 		9B1AB21620A5363F00FC9D1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B1AB21820A5363F00FC9D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B1AB21920A5363F00FC9D1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D730EA7655534B67AB5C3FCD /* libPods-TestOCPodLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestOCPodLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F50AFF518117E3840AB01E /* Pods_TestOCPodLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestOCPodLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2E7324EB6E474471FE02C9 /* Pods-TestOCPodLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOCPodLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestOCPodLib/Pods-TestOCPodLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				575379D6BBA2A612C32AC413 /* libPods-TestOCPodLib.a in Frameworks */,
+				5D01D23607C7747669B50715 /* Pods_TestOCPodLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +47,7 @@
 		30340586FB7CB43166DC37C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D730EA7655534B67AB5C3FCD /* libPods-TestOCPodLib.a */,
+				D0F50AFF518117E3840AB01E /* Pods_TestOCPodLib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,7 +107,6 @@
 				9B1AB20420A5363D00FC9D1E /* Frameworks */,
 				9B1AB20520A5363D00FC9D1E /* Resources */,
 				C09A38EF1C45DC67CC515F59 /* [CP] Embed Pods Frameworks */,
-				6D7C550ACC67D445D91E2B85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,24 +163,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6D7C550ACC67D445D91E2B85 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TestOCPodLib/Pods-TestOCPodLib-resources.sh",
-				"${PODS_ROOT}/YYStudio_LoanSDK/YYStudio_LoanSDK/QHLoanlib/QHLoanDoorBundle.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QHLoanDoorBundle.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOCPodLib/Pods-TestOCPodLib-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C09A38EF1C45DC67CC515F59 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,10 +171,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestOCPodLib/Pods-TestOCPodLib-frameworks.sh",
 				"${PODS_ROOT}/Loan_iOS_Custom_Framework/Loan_iOS_Custom_Framework/Loan_OCFTFaceDetect/Loan_OCFTFaceDetect/OCFTFaceDetect.framework",
+				"${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK/YYStudio_LoanSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCFTFaceDetect.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYStudio_LoanSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

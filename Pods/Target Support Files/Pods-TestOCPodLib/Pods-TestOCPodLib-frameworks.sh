@@ -143,11 +143,27 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FCUUID/FCUUID.framework"
   install_framework "${PODS_ROOT}/Loan_iOS_Custom_Framework/Loan_iOS_Custom_Framework/Loan_OCFTFaceDetect/Loan_OCFTFaceDetect/OCFTFaceDetect.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TMCache/TMCache.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UICKeyChainStore/UICKeyChainStore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYStudio_ACFaceCheckSDK/YYStudio_ACFaceCheckSDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK/YYStudio_LoanSDK.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FCUUID/FCUUID.framework"
   install_framework "${PODS_ROOT}/Loan_iOS_Custom_Framework/Loan_iOS_Custom_Framework/Loan_OCFTFaceDetect/Loan_OCFTFaceDetect/OCFTFaceDetect.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TMCache/TMCache.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UICKeyChainStore/UICKeyChainStore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYStudio_ACFaceCheckSDK/YYStudio_ACFaceCheckSDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK/YYStudio_LoanSDK.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

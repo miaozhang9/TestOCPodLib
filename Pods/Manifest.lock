@@ -26,6 +26,9 @@ PODS:
   - OTBase (0.1.1):
     - jetfire (~> 0.1.2)
     - MGJRouter (~> 0.9.1)
+  - SnapKit (3.2.0)
+  - SocketRocket (0.5.1)
+  - Then (2.3.0)
   - TMCache (2.1.0)
   - UICKeyChainStore (2.1.1)
   - YYModel (1.0.4)
@@ -37,12 +40,17 @@ PODS:
     - TMCache
     - YYModel
   - YYStudio_LoanSDK (0.0.6)
+  - ZMBase (0.1.1):
+    - SnapKit (~> 3.2.0)
+    - SocketRocket (~> 0.5.1)
+    - Then (~> 2.3.0)
 
 DEPENDENCIES:
   - Loan_iOS_Custom_Framework
   - OTBase (~> 0.1.0)
   - YYStudio_ACFaceCheckSDK
   - YYStudio_LoanSDK
+  - ZMBase (~> 0.1.0)
 
 SPEC REPOS:
   http://10.11.180.29/mobileDevelopers/YZT-Loan-Pod-Spec.git:
@@ -57,9 +65,13 @@ SPEC REPOS:
     - MBProgressHUD
     - MGJRouter
     - OTBase
+    - SnapKit
+    - SocketRocket
+    - Then
     - TMCache
     - UICKeyChainStore
     - YYModel
+    - ZMBase
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -70,12 +82,16 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MGJRouter: f65821e2aeffc8f9e84b254c8f1c0dd80f048aa9
   OTBase: b52221f4754c89c73ce7150c9343540edd5d1395
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
   TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
   UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYStudio_ACFaceCheckSDK: 1036e64a791bc70a0eceba474061e15633f8133c
   YYStudio_LoanSDK: f23f5fac57626a560b0b92b3cdaba47758164dbf
+  ZMBase: 7bc1d5f038970830e68b0038fb44c46024b2aa6a
 
-PODFILE CHECKSUM: 13c92f4c0fd4aff74dd013c727453ad1cecccd67
+PODFILE CHECKSUM: f2d5ef0cbf42c810dc4c3d65ec954769ab81d88c
 
 COCOAPODS: 1.5.0

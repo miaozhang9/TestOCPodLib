@@ -6,21 +6,72 @@
 //  Copyright © 2018年 Miaoz. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#include "AppDelegate.h"
+#include "GeneratedPluginRegistrant.h"
+#import <Flutter/Flutter.h>
+
 
 
 @interface AppDelegate ()
-
+//1.先全局定义个Channel属性
+@property(nonatomic, strong)FlutterMethodChannel *batteryChannel;
 @end
 
 @implementation AppDelegate
+- (int)pay {
+    int ran = arc4random() % 100;
+    return ran;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    return YES;
+    FlutterViewController* controller = (FlutterViewController*)self.window.rootViewController;
+    //2.创建MethodChannel对应flutter与原生
+    self.batteryChannel = [FlutterMethodChannel
+                                            methodChannelWithName:@"samples.flutter.io/pay"
+                                            binaryMessenger:controller];
+    //3.flutter动作触发及回调
+    [self.batteryChannel setMethodCallHandler:^(FlutterMethodCall* call, FlutterResult result) {
+        //支付method
+        if ([@"pay" isEqualToString:call.method]) {
+          //在这里去调用支付的方法
+            //例如调用aliPaySDK
+            [self aliPayinit];
+            
+            result(nil);
+        } else {
+            result(FlutterMethodNotImplemented);
+        }
+    }];
+    
+
+    
+   
+    
+    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+
+//    return YES;
 }
+
+- (void)aliPayinit {
+    //aiPay的sdk在这里写
+}
+
+
+//比如说这个就是你支付完成后支付宝回调给你成功失败的方法
+- (void)aliPaySuccess:(BOOL) isSuccess error:(NSString *)error dataInfo:(NSDictionary *)dic {
+    
+    //这时候调用这个会回调给你flutter
+    [self.batteryChannel send:"pay"];
+    
+    
+}
+
+
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

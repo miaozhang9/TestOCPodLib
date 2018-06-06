@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <OCFTFaceDetect/OCFTFaceDetector.h>
+//#import <OCFTFaceDetect/OCFTFaceDetector.h>
 #import <YYStudio_LoanSDK/QHLoanDoor.h>
 
 
@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [OCFTFaceDetector getSDKInfo];
+//    [OCFTFaceDetector getSDKInfo];
 }
 
 

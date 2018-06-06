@@ -10,8 +10,8 @@ target 'TestOCPodLib' do
   use_frameworks!
 
   # Pods for TestPodLib
-pod 'ZMBase','~> 0.1.0'
-pod 'OTBase','~> 0.1.0'
+  #pod 'ZMBase','~> 0.1.0'
+  #pod 'OTBase','~> 0.1.0'
 #pod 'Loan_iOS_Custom_Framework'
 pod 'YYStudio_LoanSDK'
 pod 'YYStudio_ACFaceCheckSDK'

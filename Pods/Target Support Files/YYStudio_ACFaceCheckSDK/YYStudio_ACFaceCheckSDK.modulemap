@@ -1,6 +1,0 @@
-framework module YYStudio_ACFaceCheckSDK {
-  umbrella header "YYStudio_ACFaceCheckSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

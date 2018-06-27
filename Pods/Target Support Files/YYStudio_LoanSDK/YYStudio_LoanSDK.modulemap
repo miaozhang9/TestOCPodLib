@@ -1,0 +1,6 @@
+framework module YYStudio_LoanSDK {
+  umbrella header "YYStudio_LoanSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

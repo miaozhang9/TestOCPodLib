@@ -106,7 +106,7 @@
 				9B1AB20320A5363D00FC9D1E /* Sources */,
 				9B1AB20420A5363D00FC9D1E /* Frameworks */,
 				9B1AB20520A5363D00FC9D1E /* Resources */,
-				3898A3F0C92F21B81FAFF450 /* [CP] Embed Pods Frameworks */,
+				90D0B1BC2C409CFA4458F201 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,20 +163,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3898A3F0C92F21B81FAFF450 /* [CP] Embed Pods Frameworks */ = {
+		90D0B1BC2C409CFA4458F201 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestOCPodLib/Pods-TestOCPodLib-frameworks.sh",
-				"${PODS_ROOT}/YYStudio_LoanSDK_All/YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTFaceDetect.framework",
-				"${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK_All/YYStudio_LoanSDK_All.framework",
+				"${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK/YYStudio_LoanSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCFTFaceDetect.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYStudio_LoanSDK_All.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYStudio_LoanSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

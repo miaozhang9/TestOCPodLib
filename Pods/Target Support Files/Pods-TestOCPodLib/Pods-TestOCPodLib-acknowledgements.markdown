@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## YYStudio_LoanSDK_All
+## YYStudio_LoanSDK
 
 Copyright (c) 2018 miaozhang9 <395052985@qq.com>
 

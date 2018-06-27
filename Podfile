@@ -14,10 +14,10 @@ target 'TestOCPodLib' do
   #pod 'OTBase','~> 0.1.0'
 #pod 'Loan_iOS_Custom_Framework'
 
-#pod 'YYStudio_LoanSDK'
+pod 'YYStudio_LoanSDK'
 #pod 'YYStudio_ACFaceCheckSDK'
-pod 'YYStudio_LoanSDK_All/QHLoanlib'
-pod 'YYStudio_LoanSDK_All/FaceRecognitionLib'
+#pod 'YYStudio_LoanSDK_All/QHLoanlib'
+#pod 'YYStudio_LoanSDK_All/FaceRecognitionLib'
 
 
 

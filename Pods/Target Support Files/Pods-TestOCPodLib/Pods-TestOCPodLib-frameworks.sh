@@ -143,12 +143,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/YYStudio_LoanSDK_All/YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTFaceDetect.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK_All/YYStudio_LoanSDK_All.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK/YYStudio_LoanSDK.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/YYStudio_LoanSDK_All/YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTFaceDetect.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK_All/YYStudio_LoanSDK_All.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK/YYStudio_LoanSDK.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

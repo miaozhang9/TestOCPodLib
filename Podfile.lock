@@ -1,16 +1,21 @@
 PODS:
-  - YYStudio_LoanSDK (0.0.7)
+  - YYStudio_LoanSDK_All (0.0.2):
+    - YYStudio_LoanSDK_All/FaceRecognitionLib (= 0.0.2)
+    - YYStudio_LoanSDK_All/QHLoanlib (= 0.0.2)
+  - YYStudio_LoanSDK_All/FaceRecognitionLib (0.0.2)
+  - YYStudio_LoanSDK_All/QHLoanlib (0.0.2):
+    - YYStudio_LoanSDK_All/FaceRecognitionLib
 
 DEPENDENCIES:
-  - YYStudio_LoanSDK
+  - YYStudio_LoanSDK_All
 
 SPEC REPOS:
   http://10.11.180.29/mobileDevelopers/YZT-Loan-Pod-Spec.git:
-    - YYStudio_LoanSDK
+    - YYStudio_LoanSDK_All
 
 SPEC CHECKSUMS:
-  YYStudio_LoanSDK: 7ebc1794f82f74e4fdf4187b6393bf19063b6f36
+  YYStudio_LoanSDK_All: c31839043870339def955d21ecb79c711e22f4f2
 
-PODFILE CHECKSUM: 9a9a684f0a90e28742f237217973e49c124086ca
+PODFILE CHECKSUM: 741c93b8dac7b0c60bff4cbbb2ddd25b1c05116c
 
 COCOAPODS: 1.5.0

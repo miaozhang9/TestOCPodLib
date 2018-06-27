@@ -170,11 +170,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestOCPodLib/Pods-TestOCPodLib-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK/YYStudio_LoanSDK.framework",
+				"${PODS_ROOT}/YYStudio_LoanSDK_All/YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTFaceDetect.framework",
+				"${BUILT_PRODUCTS_DIR}/YYStudio_LoanSDK_All/YYStudio_LoanSDK_All.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYStudio_LoanSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCFTFaceDetect.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYStudio_LoanSDK_All.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

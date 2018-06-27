@@ -9,8 +9,8 @@
 #import "ViewController.h"
 //#import <OCFTFaceDetect/OCFTFaceDetector.h>
 //#import <YYStudio_LoanSDK_All/OCFTFaceDetector.h>
-//#import <YYStudio_LoanSDK_All/QHLoanDoor.h>
-#import <YYStudio_LoanSDK/YYStudio_LoanSDK.h>
+#import <YYStudio_LoanSDK_All/QHLoanDoor.h>
+//#import <YYStudio_LoanSDK/YYStudio_LoanSDK.h>
 //#import <YYStudio_ACFaceCheckSDK/YYStudio_ACFaceCheckSDK.h>
 
 

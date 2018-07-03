@@ -57,6 +57,9 @@
 
 @property (nonatomic, assign) QHLoanDoorJumpTypeEnum jumpTypeEnum;
 
+
+
+
 @end
 
 @implementation QHLoanDoor
@@ -78,6 +81,7 @@ static QHLoanDoor *door;
     return self;
 }
 
+/***
 - (QHLoanDoor *(^)(NSDictionary *))setDataInfo
 {
     QHLoanDoor * (^callBlock)() = ^(NSDictionary *dataDic) {
@@ -86,7 +90,6 @@ static QHLoanDoor *door;
     };
     return callBlock;
 }
-
 - (QHLoanDoor *(^)(NSString *))setBarColor
 {
     QHLoanDoor * (^callBlock)() = ^(NSString *barColor) {
@@ -95,6 +98,7 @@ static QHLoanDoor *door;
     };
     return callBlock;
 }
+
 
 - (QHLoanDoor *(^)(NSString *))setBarTitleColor
 {
@@ -162,13 +166,12 @@ static QHLoanDoor *door;
 - (QHLoanDoor *(^)(QHCoreWebViewEnum ))setCoreWebView {
     QHLoanDoor * (^callBlock)(QHCoreWebViewEnum cc) = ^(QHCoreWebViewEnum coreWebViewEnum) {
         self.coreWebViewEnum = coreWebViewEnum;
-      
+        
         return self;
     };
     return callBlock;
     
 }
-
 - (QHLoanDoor *(^)(id))setBasicDelegate
 {
     QHLoanDoor * (^callBlock)() = ^(id <QHBasicProtocol> basicDelegate) {
@@ -178,18 +181,233 @@ static QHLoanDoor *door;
     return callBlock;
 }
 
-- (QHLoanDoor *(^)(QHLoanDoorJumpTypeEnum ))setJumpTypeEnum {
-    QHLoanDoor * (^callBlock)(QHLoanDoorJumpTypeEnum cc) = ^(QHLoanDoorJumpTypeEnum jumpTypeEnum) {
-        self.jumpTypeEnum = jumpTypeEnum;
-        
-        return self;
-    };
-    return callBlock;
-}
 
 -(QHLoanDoor *(^)())start
 {
     QHLoanDoor * (^callBlock)() = ^() {
+        
+        if (self.coreWebViewEnum != QHCoreWebView_WKWebView && self.coreWebViewEnum != QHCoreWebView_UIWebView) {
+            //default QHCoreWebView_UIWebView
+            self.coreWebViewEnum = QHCoreWebView_UIWebView ;
+        }
+        [self registerQHLoanSDKURLProtocol];
+        
+        UIWindow *window = [[UIApplication sharedApplication].delegate window];
+        if (!window) {
+            NSError *error = [NSError errorWithDomain:@"no key window" code:0 userInfo:@{}];
+            if (_callBackBlcok) {
+                self.callBackBlcok(NO, error);
+            }
+            return self;
+        }
+        UIViewController *rootCtrl = window.rootViewController;
+        if (!rootCtrl) {
+            NSError *error = [NSError errorWithDomain:@"no key window" code:0 userInfo:@{}];
+            if (_callBackBlcok) {
+                self.callBackBlcok(NO, error);
+            }
+            return self;
+        }
+        
+        QHViewController *viewController = [[QHViewController alloc] init];
+        viewController.superController = rootCtrl;
+        self.viewController = viewController;
+        viewController.startPage = self.startPage && self.startPage.length > 0 ? self.startPage : nil;
+        viewController.baseUserAgent = self.agent ? self.agent : @"ToCred";
+        if (self.basicDelegate) {
+            viewController.basicDelegate =  self.basicDelegate ;
+        }
+        
+        
+        [viewController view];
+        viewController.navigationController.navigationBar.translucent = NO;
+        //        [viewController setAutomaticallyAdjustsScrollViewInsets:NO];
+        viewController.edgesForExtendedLayout = UIRectEdgeNone;
+        
+        // self.viewController.title = @"支持插件列表";
+        //push
+        //        [(UINavigationController*)rootCtrl pushViewController:viewController animated:Yes];
+        //present
+        [rootCtrl presentViewController:[[UINavigationController alloc] initWithRootViewController:viewController] animated:YES completion:^{
+            if (_callBackBlcok) {
+                self.callBackBlcok(YES, nil);
+            }
+            
+        }];
+        
+        self.viewController.navigationController.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor qh_colorWithHexString:self.barTitleColor?self.barTitleColor:@"#000000"],NSFontAttributeName:[UIFont pingFangSCRegularWithSize:self.barTitleFontSize?self.barTitleFontSize:17]};
+        [self.viewController.navigationController.navigationBar setBackgroundColor:[UIColor qh_colorWithHexString:self.barColor?self.barColor:@"#FFFFFF"]];
+        self.viewController.navigationController.navigationBar.barTintColor = [UIColor qh_colorWithHexString:self.barColor?self.barColor:@"#FFFFFF"];
+        
+        [self.viewController.backBtn setTitle:self.backBtnTitle?self.backBtnTitle:@"返回" forState:UIControlStateNormal];
+        self.viewController.backBtn.titleEdgeInsets = UIEdgeInsetsMake(0, -5, 0, 5);
+        UIColor *backBtnTitleColor = [UIColor qh_colorWithHexString:self.backBtnTitleColor?self.backBtnTitleColor:@"#000000"];
+        [self.viewController.backBtn setTitleColor:backBtnTitleColor forState:UIControlStateNormal];
+        
+        UIImage * bImage = [UIImage imageNamed:@"BarArrowLeft" inBundle:[QHLoanDoorBundle bundle] compatibleWithTraitCollection:nil];
+        
+        [self.viewController.backBtn setImage:self.backBtnImage? self.backBtnImage:bImage forState: UIControlStateNormal];
+        self.viewController.backBtn.imageEdgeInsets = UIEdgeInsetsMake(0, -12, 0, 12);
+        
+        return self;
+    };
+    
+    return callBlock;
+}
+
+***/
+
+
+- (QHLoanDoorConfigToDic)setDataInfo
+{
+    __weak typeof(self) weakSelf = self;
+    return ^(NSDictionary *dataDic){
+        
+        self.dataInfo = dataDic;
+        return weakSelf;
+    };
+    
+}
+
+
+
+- (QHLoanDoorConfigToString)setBarColor{
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(NSString *str){
+        
+        self.barColor = str;
+        return weakSelf;
+    };
+    
+}
+
+- (QHLoanDoorConfigToString)setBarTitleColor
+{
+    __weak typeof(self) weakSelf = self;
+    return ^(NSString *str){
+        
+        self.barTitleColor = str;
+        return weakSelf;
+    };
+}
+
+
+
+- (QHLoanDoorConfigToInteger)setBarTitleFontSize
+{
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(NSInteger integer){
+        
+        self.barTitleFontSize = integer;
+        return weakSelf;
+    };
+}
+
+
+
+- (QHLoanDoorConfigToString)setBackBtnTitle
+{
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(NSString *str){
+        
+        self.backBtnTitle = str;
+        return weakSelf;
+    };
+}
+
+
+
+- (QHLoanDoorConfigToString)setBackBtnTitleColor
+{
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(NSString *str){
+        
+        self.backBtnTitleColor = str;
+        return weakSelf;
+    };
+}
+
+
+
+- (QHLoanDoorConfigToUIImage)setBackBtnImage
+{
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(UIImage *image){
+        
+        self.backBtnImage = image;
+        return weakSelf;
+    };
+}
+
+
+- (QHLoanDoorConfigToString)setStartPageUrl
+{
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(NSString *str){
+        
+        self.startPage = str;
+        return weakSelf;
+    };
+}
+
+
+- (QHLoanDoorConfigToString)setAgent
+{
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(NSString *str){
+        
+        self.agent = str;
+        return weakSelf;
+    };
+}
+
+- (QHLoanDoorConfigToCoreWebViewEnum)setCoreWebView
+{
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(QHCoreWebViewEnum coreWebViewEnum){
+        
+        self.coreWebViewEnum = coreWebViewEnum;
+        return weakSelf;
+    };
+}
+
+
+- (QHLoanDoorConfigToid)setBasicDelegate
+{
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(id delegate){
+        
+        self.basicDelegate = delegate;
+        return weakSelf;
+    };
+}
+
+- (QHLoanDoorConfigToJumpTypeEnum)setJumpTypeEnum
+{
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(QHLoanDoorJumpTypeEnum jumpTypeEnum){
+        
+        self.jumpTypeEnum = jumpTypeEnum;
+        return weakSelf;
+    };
+}
+
+-(QHLoanDoorConfigVoid)start
+{
+    
+    
+    __weak typeof(self) weakSelf = self;
+    return ^(void){
         
         if (self.coreWebViewEnum != QHCoreWebView_WKWebView && self.coreWebViewEnum != QHCoreWebView_UIWebView) {
             //default QHCoreWebView_UIWebView
@@ -202,7 +420,7 @@ static QHLoanDoor *door;
         }
         
         [self registerQHLoanSDKURLProtocol];
- 
+        
         UIWindow *window = [[UIApplication sharedApplication].delegate window];
         if (!window) {
             NSError *error = [NSError errorWithDomain:@"no key window" code:0 userInfo:@{}];
@@ -219,7 +437,7 @@ static QHLoanDoor *door;
             }
             return self;
         }
-       
+        
         QHViewController *viewController = [[QHViewController alloc] init];
         viewController.superController = rootCtrl;
         self.viewController = viewController;
@@ -232,13 +450,13 @@ static QHLoanDoor *door;
         
         [viewController view];
         viewController.navigationController.navigationBar.translucent = NO;
-//        [viewController setAutomaticallyAdjustsScrollViewInsets:NO];
+        //        [viewController setAutomaticallyAdjustsScrollViewInsets:NO];
         viewController.edgesForExtendedLayout = UIRectEdgeNone;
-       
+        
         // self.viewController.title = @"支持插件列表";
         if (self.jumpTypeEnum == QHLoanDoorJumpType_push) {
             //push
-              [rootCtrl.navigationController pushViewController:viewController animated:YES];
+            [rootCtrl.navigationController pushViewController:viewController animated:YES];
         } else {
             //present
             [rootCtrl presentViewController:[[UINavigationController alloc] initWithRootViewController:viewController] animated:YES completion:^{
@@ -248,7 +466,8 @@ static QHLoanDoor *door;
                 
             }];
         }
-    self.viewController.navigationController.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor qh_colorWithHexString:self.barTitleColor?self.barTitleColor:@"#000000"],NSFontAttributeName:[UIFont pingFangSCRegularWithSize:self.barTitleFontSize?self.barTitleFontSize:17]};
+        
+        self.viewController.navigationController.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor qh_colorWithHexString:self.barTitleColor?self.barTitleColor:@"#000000"],NSFontAttributeName:[UIFont pingFangSCRegularWithSize:self.barTitleFontSize?self.barTitleFontSize:17]};
         [self.viewController.navigationController.navigationBar setBackgroundColor:[UIColor qh_colorWithHexString:self.barColor?self.barColor:@"#FFFFFF"]];
         self.viewController.navigationController.navigationBar.barTintColor = [UIColor qh_colorWithHexString:self.barColor?self.barColor:@"#FFFFFF"];
         
@@ -261,13 +480,11 @@ static QHLoanDoor *door;
         
         [self.viewController.backBtn setImage:self.backBtnImage? self.backBtnImage:bImage forState: UIControlStateNormal];
         self.viewController.backBtn.imageEdgeInsets = UIEdgeInsetsMake(0, -12, 0, 12);
-
-        return self;
+        
+        return weakSelf;
     };
     
-    return callBlock;
 }
-
 #pragma mark - 视图控制器处理 获取最上层vc ⬇️
 - (UIWindow *)keyWindow
 {

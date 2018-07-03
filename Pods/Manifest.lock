@@ -1,9 +1,9 @@
 PODS:
-  - YYStudio_LoanSDK_All (0.0.2):
-    - YYStudio_LoanSDK_All/FaceRecognitionLib (= 0.0.2)
-    - YYStudio_LoanSDK_All/QHLoanlib (= 0.0.2)
-  - YYStudio_LoanSDK_All/FaceRecognitionLib (0.0.2)
-  - YYStudio_LoanSDK_All/QHLoanlib (0.0.2):
+  - YYStudio_LoanSDK_All (0.0.3):
+    - YYStudio_LoanSDK_All/FaceRecognitionLib (= 0.0.3)
+    - YYStudio_LoanSDK_All/QHLoanlib (= 0.0.3)
+  - YYStudio_LoanSDK_All/FaceRecognitionLib (0.0.3)
+  - YYStudio_LoanSDK_All/QHLoanlib (0.0.3):
     - YYStudio_LoanSDK_All/FaceRecognitionLib
 
 DEPENDENCIES:
@@ -14,7 +14,7 @@ SPEC REPOS:
     - YYStudio_LoanSDK_All
 
 SPEC CHECKSUMS:
-  YYStudio_LoanSDK_All: c31839043870339def955d21ecb79c711e22f4f2
+  YYStudio_LoanSDK_All: 445f3cf2c937093764a629ed658ec094db958068
 
 PODFILE CHECKSUM: 741c93b8dac7b0c60bff4cbbb2ddd25b1c05116c
 

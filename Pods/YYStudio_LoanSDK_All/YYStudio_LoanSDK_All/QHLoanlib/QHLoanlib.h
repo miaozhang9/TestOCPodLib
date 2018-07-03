@@ -16,7 +16,7 @@ FOUNDATION_EXPORT const unsigned char QHLoanlibVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <QHLoanlib/PublicHeader.h>
 
-#import <QHLoanlib/QHLoanDoor.h>
-#import <QHLoanlib/QHViewController.h>
+#import <YYStudio_LoanSDK_All/QHLoanDoor.h>
+#import <YYStudio_LoanSDK_All/QHViewController.h>
 
 

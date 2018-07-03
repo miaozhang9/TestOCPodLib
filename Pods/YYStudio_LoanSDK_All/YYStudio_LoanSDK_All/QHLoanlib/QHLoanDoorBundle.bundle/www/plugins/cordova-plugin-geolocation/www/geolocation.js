@@ -52,10 +52,10 @@ function parseParameters(options) {
                 opt.timeout = options.timeout;
             }
         }
-       if (options.locationStatus !== undefined && !isNaN(options.locationStatus)) {
+       if (options.locationStatus !== undefined) {
                opt.locationStatus = options.locationStatus;
        }
-       if (options.authorStatus !== undefined && !isNaN(options.authorStatus)) {
+       if (options.authorStatus !== undefined) {
                opt.authorStatus = options.authorStatus;
        }
                

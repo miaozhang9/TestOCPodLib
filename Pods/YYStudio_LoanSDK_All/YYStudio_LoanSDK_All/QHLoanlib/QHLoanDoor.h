@@ -2,7 +2,6 @@
 //  QHLoanDoor.h
 //  LoanLib
 //
-//  Created by yinxukun on 2016/12/16.
 //  Copyright © 2016年 Miaoz. All rights reserved.
 //
 
@@ -24,13 +23,26 @@ typedef NS_ENUM(NSUInteger, QHCoreWebViewEnum) {
 };
 
 typedef NS_ENUM(NSUInteger, QHLoanDoorJumpTypeEnum) {
-     QHLoanDoorJumpType_present, //present进入
+    QHLoanDoorJumpType_present, //present进入
     QHLoanDoorJumpType_push, //push进入
-   
+    
 };
+
 typedef void(^CallBackBlcok) (BOOL isSuccess, NSError *error);
 
 @interface QHLoanDoor : NSObject
+typedef QHLoanDoor *(^QHLoanDoorConfigVoid)(void);
+typedef QHLoanDoor *(^QHLoanDoorConfigToBool)(BOOL is);
+typedef QHLoanDoor *(^QHLoanDoorConfigToInteger)(NSInteger number);
+typedef QHLoanDoor *(^QHLoanDoorConfigToFloat)(CGFloat number);
+typedef QHLoanDoor *(^QHLoanDoorConfigToString)(NSString *str);
+typedef QHLoanDoor *(^QHLoanDoorConfigToDic)(NSDictionary *dic);
+typedef QHLoanDoor *(^QHLoanDoorConfigToCoreWebViewEnum)(QHCoreWebViewEnum coreWebViewEnum);
+typedef QHLoanDoor *(^QHLoanDoorConfigToid)(id delegate);
+typedef QHLoanDoor *(^QHLoanDoorConfigToUIImage)(UIImage *image);
+typedef QHLoanDoor *(^QHLoanDoorConfigToJumpTypeEnum)(QHLoanDoorJumpTypeEnum jumpTypeEnum);
+
+
 
 
 /*传递信息*/
@@ -40,35 +52,47 @@ typedef void(^CallBackBlcok) (BOOL isSuccess, NSError *error);
 //webview 内核
 @property (nonatomic, assign) QHCoreWebViewEnum coreWebViewEnum;
 
-
 + (instancetype)share;
 /**链式调用**/
 //设置传递信息
-- (QHLoanDoor *(^)(NSDictionary *))setDataInfo;
-//设置导航条颜色
-- (QHLoanDoor *(^)(NSString *))setBarColor;
-//设置title颜色
-- (QHLoanDoor *(^)(NSString *))setBarTitleColor;
-//设置title字体大小
-- (QHLoanDoor *(^)(NSInteger ))setBarTitleFontSize;
-//设置backTitle
-- (QHLoanDoor *(^)(NSString *))setBackBtnTitle;
-//设置backTitle颜色
-- (QHLoanDoor *(^)(NSString *))setBackBtnTitleColor;
-//设置back图片
-- (QHLoanDoor *(^)(UIImage *))setBackBtnImage;
-//设置启动URL
-- (QHLoanDoor *(^)(NSString *))setStartPageUrl;
-//设置标示
-- (QHLoanDoor *(^)(NSString *))setAgent;
-//设置是否使用wkwebView内核 WK
-- (QHLoanDoor *(^)(QHCoreWebViewEnum ))setCoreWebView;
-//代理 如果使用QHLoanDoor启动的时候需要协议方法时需要传入
-- (QHLoanDoor *(^)(id))setBasicDelegate;
-//跳转方式
-- (QHLoanDoor *(^)(QHLoanDoorJumpTypeEnum ))setJumpTypeEnum;
-//启动SDK
-- (QHLoanDoor *(^)())start;
+//- (QHLoanDoor *(^)(NSDictionary *))setDataInfo;
+////设置导航条颜色
+//- (QHLoanDoor *(^)(NSString *))setBarColor;
+////设置title颜色
+//- (QHLoanDoor *(^)(NSString *))setBarTitleColor;
+////设置title字体大小
+//- (QHLoanDoor *(^)(NSInteger ))setBarTitleFontSize;
+////设置backTitle
+//- (QHLoanDoor *(^)(NSString *))setBackBtnTitle;
+////设置backTitle颜色
+//- (QHLoanDoor *(^)(NSString *))setBackBtnTitleColor;
+////设置back图片
+//- (QHLoanDoor *(^)(UIImage *))setBackBtnImage;
+////设置启动URL
+//- (QHLoanDoor *(^)(NSString *))setStartPageUrl;
+////设置标示
+//- (QHLoanDoor *(^)(NSString *))setAgent;
+////设置是否使用wkwebView内核 WK
+//- (QHLoanDoor *(^)(QHCoreWebViewEnum ))setCoreWebView;
+////代理 如果使用QHLoanDoor启动的时候需要协议方法时需要传入
+//- (QHLoanDoor *(^)(id))setBasicDelegate;
+////启动SDK
+//- (QHLoanDoor *(^)())start;
+@property (nonatomic, copy) QHLoanDoorConfigToDic setDataInfo;
+@property (nonatomic, copy) QHLoanDoorConfigToString setBarColor;
+@property (nonatomic, copy) QHLoanDoorConfigToString setBarTitleColor;
+@property (nonatomic, copy) QHLoanDoorConfigToInteger setBarTitleFontSize;
+@property (nonatomic, copy) QHLoanDoorConfigToString setBackBtnTitle;
+@property (nonatomic, copy) QHLoanDoorConfigToString setBackBtnTitleColor;
+@property (nonatomic, copy) QHLoanDoorConfigToUIImage setBackBtnImage;
+@property (nonatomic, copy) QHLoanDoorConfigToString setStartPageUrl;
+@property (nonatomic, copy) QHLoanDoorConfigToString setAgent;
+@property (nonatomic, copy) QHLoanDoorConfigToCoreWebViewEnum setCoreWebView;
+@property (nonatomic, copy) QHLoanDoorConfigToid setBasicDelegate;
+@property (nonatomic, copy) QHLoanDoorConfigToJumpTypeEnum setJumpTypeEnum;
+@property (nonatomic, copy) QHLoanDoorConfigVoid start;
+
+
 
 @property (nonatomic,copy)CallBackBlcok callBackBlcok;
 //1.arg1 为图片base64 arg2 右为文字 身份证是正面
@@ -111,6 +135,5 @@ typedef void(^CallBackBlcok) (BOOL isSuccess, NSError *error);
  executeH5InfoAction接口配合使用通知H5的方法
  */
 - (void)sendCallBackPluginResultDictionary:(NSDictionary *)resultDictionary resultStatus:(BOOL)isSuccess;
-
 @end
 

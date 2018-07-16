@@ -25,8 +25,11 @@
     // Do any additional setup after loading the view, typically from a nib.
 //    [OCFTFaceDetector getSDKInfo];
      Class pacteraClass = NSClassFromString(@"oneViewController");
-     NSString *str = @"www/index.html";
-      [QHLoanDoor share].setDataInfo(@{}).setBasicDelegate(self).setBarColor(@"#d8e6ff").setBarTitleColor(@"#000000").setBarTitleFontSize(17).setBackBtnTitle(@"返回").setBackBtnTitleColor(@"#ff6600").setBackBtnImage(nil).setAgent(@"Agent").setCoreWebView(QHCoreWebView_UIWebView).setStartPageUrl(str).setJumpTypeEnum(QHLoanDoorJumpType_present).start();
+    
+}
+- (IBAction)startMethod:(id)sender {
+    NSString *str = @"www/index.html";
+    [QHLoanDoor share].setDataInfo(@{}).setBasicDelegate(self).setBarColor(@"#d8e6ff").setBarTitleColor(@"#000000").setBarTitleFontSize(17).setBackBtnTitle(@"返回").setBackBtnTitleColor(@"#ff6600").setBackBtnImage(nil).setAgent(@"Agent").setCoreWebView(QHCoreWebView_UIWebView).setStartPageUrl(str).setJumpTypeEnum(QHLoanDoorJumpType_present).start();
 }
 
 

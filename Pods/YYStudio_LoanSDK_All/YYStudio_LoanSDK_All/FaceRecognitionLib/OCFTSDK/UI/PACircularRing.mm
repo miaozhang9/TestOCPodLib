@@ -107,9 +107,9 @@
 - (void)startAnimation{
     [self setHidden:NO];
     
-//    MAIN_ACTION((^(){
+    MAIN_ACTION((^(){
         [self.numLabel setText:[NSString stringWithFormat:@"%ld", (long)_maxTime]];
-//    }));
+    }));
 
     if (self.timer == nil) {
         self.timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(timeChange) userInfo:nil repeats:YES];

@@ -92,6 +92,7 @@
                        // document.getElementById('faceRecognitionImageId').src = result;
                     };
                     function onError(error) {
+                         navigator.notification.alert(error, null, '提示','OK');
                     }
                     
                     QHCamera.faceRecognition(onSuccess,onError, ['10000'])

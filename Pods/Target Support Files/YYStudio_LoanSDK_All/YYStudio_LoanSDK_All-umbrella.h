@@ -10,8 +10,6 @@
 #endif
 #endif
 
-#import "FaceRecognitionLib.h"
-#import "OCFTFaceDetector.h"
 #import "PAFaceCheckHome.h"
 #import "PAZCLDefineTool.h"
 #import "PAZCLTools.h"

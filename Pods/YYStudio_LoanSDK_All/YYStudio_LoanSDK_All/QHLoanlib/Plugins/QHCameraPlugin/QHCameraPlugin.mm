@@ -202,7 +202,7 @@ NSString *const QHImage_Key = @"base64Img";
     
   
     dispatch_sync_on_main_queue(^{
-        PAFaceCheckHome *faceVC = [[PAFaceCheckHome alloc] initWithPAcheckWithTheCountdown:YES andTheAdvertising:@"" number0fAction:@"2" voiceSwitch:YES delegate:delegate];
+        PAFaceCheckHome *faceVC = [[PAFaceCheckHome alloc] initWithPAcheckWithTheCountdown:YES andTheAdvertising:@"" number0fAction:@"3" voiceSwitch:YES delegate:delegate];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:faceVC];
         
         [self.viewController presentViewController:nav animated:YES completion:nil];

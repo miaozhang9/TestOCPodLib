@@ -146,6 +146,11 @@ static void * KVOContext = &KVOContext;
 
     }
 }
+- (void)dealloc
+{
+    //暂时移除，解决Crash问题
+    [self.webView removeObserver:self forKeyPath:@"URL"];
+}
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
@@ -517,5 +522,7 @@ static void * KVOContext = &KVOContext;
 {
     [self.scriptMessageHandler userContentController:userContentController didReceiveScriptMessage:message];
 }
+
+
 
 @end

@@ -867,28 +867,40 @@
         
     } else {
         
-         UIWebView *myWebView = (UIWebView *)self.webView;
-        if (myWebView.canGoBack) {
-            [myWebView goBack];
-        }else {
-            NSArray *vcArr = self.navigationController.viewControllers;
-            if (vcArr.count > 1) {
-                [self.navigationController popViewControllerAnimated:YES];
-            } else {
-                if (self.navigationController.presentingViewController)
-                {
-                    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-                }
-                else
-                {
-                    [self.navigationController.navigationController popToRootViewControllerAnimated:YES];
-                }
-               
+        if (uiwebView) {
+            if (uiwebView.canGoBack) {
+                [uiwebView goBack];
+            }else {
+                [self goBackMethod];
+            }
+        } else {
+            if (wkwebView.canGoBack) {
+                [wkwebView goBack];
+            }else {
+                [self goBackMethod];
             }
         }
+        
     }
 }
 
+- (void)goBackMethod {
+    
+    NSArray *vcArr = self.navigationController.viewControllers;
+    if (vcArr.count > 1) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        if (self.navigationController.presentingViewController)
+        {
+            [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        }
+        else
+        {
+            [self.navigationController.navigationController popToRootViewControllerAnimated:YES];
+        }
+        
+    }
+}
 -(void)setBackBtnTitleColor:(NSString *) color backImg:(NSString *) img {
     
     if (color && color.length> 0) {

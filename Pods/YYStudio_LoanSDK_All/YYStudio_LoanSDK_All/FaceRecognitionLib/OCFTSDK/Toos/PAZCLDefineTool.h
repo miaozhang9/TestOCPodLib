@@ -155,8 +155,9 @@ typedef void(^VoidBlock_bool)(BOOL);
 #define KDEFAULTHOSTAPI     @"http://test.faceid.com"
 #define KDEFAULTAPIKEY      @"test"
 #define KDEFAULTAPISECRET   @"test"
-//埋点通知
+//埋点
 #define kFCTrackNotification @"kFCTrackNotification"
+
 #endif
 
 

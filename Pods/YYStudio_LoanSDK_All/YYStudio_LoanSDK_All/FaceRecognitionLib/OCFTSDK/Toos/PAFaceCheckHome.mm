@@ -41,7 +41,11 @@
 
 @property (nonatomic, strong) OCFTFaceDetector *livenessDetector;
 @property (nonatomic, assign) BOOL starLiveness;            //表示是否开启活体检测
+@property (nonatomic, assign) BOOL playVoice;
 @property (nonatomic, strong) PABottomView *bottomView;
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIView *backView;
+@property (nonatomic, strong) UIView *preView;
 
 @property (nonatomic) BOOL soundContor;
 @property (nonatomic) BOOL faceControl;
@@ -95,18 +99,43 @@
 - (void)viewDidLoad{
     
     [super viewDidLoad];
+    _imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:_imageView];
+    [self.view.layer insertSublayer:self.imageView.layer above:0];
+    
+    self.backView = [[UIView alloc] initWithFrame:self.view.bounds];
+    [_backView setBackgroundColor:[UIColor clearColor]];
+    [self.view addSubview:_backView];
+    [self.view bringSubviewToFront:_backView];
     
     [self initBar];             //初始化bar
     [self initAVSpeech];        //初始化语音
     [self.bottomView showPromtpView];//底部图片
 
     [self createFacecheck];     //FaceCheck初始化
-    [self setUpCameraLayer];    //加载图层预览
+//    [self setUpCameraLayer];    //加载图层预览
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive:)
+                                                 name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive:)
+                                                 name:UIApplicationDidBecomeActiveNotification object:nil];
+
     //埋点
     [[NSNotificationCenter defaultCenter] postNotificationName:kFCTrackNotification object:self userInfo:@{@"TrackLabel":@"人脸识别_开启"}];
 }
 
 
+- (void)applicationWillResignActive:(NSNotification *)noti {
+    [self.livenessDetector stopLiveness];
+    if (self.timerCoundDown) {
+        [self stopAnimations];
+        
+    }
+}
+
+- (void)applicationDidBecomeActive:(NSNotification *)noti {
+    [self.livenessDetector startLiveness];
+}
 
 
 #pragma  mark -- 处理图片数据
@@ -121,6 +150,33 @@
         //结束
         [self backToAppAnimated:NO];
         
+        if (self.delegate && [self.delegate respondsToSelector:@selector(getPacheckreportWithImage:andTheFaceImage:andTheFaceImageInfo:andTheResultCallBlacek:)]){
+            
+            NSMutableDictionary*face_rectDic = [NSMutableDictionary new];
+            NSMutableDictionary *resultDic = [NSMutableDictionary new];
+            if (imageFrame.faceImage) {
+                NSString *centerX = [NSString stringWithFormat:@"%ld",[face_rectDic[@"face_rect_top_left"] integerValue]];
+                NSString *centerY = [NSString stringWithFormat:@"%ld",[face_rectDic[@"face_rect_top_right"] integerValue]];
+                NSString *width = [NSString stringWithFormat:@"%ld",[face_rectDic[@"face_rect_width"] integerValue]];
+                NSString *height = [NSString stringWithFormat:@"%ld",[face_rectDic[@"face_rect_height"] integerValue]];
+                [resultDic setObject:centerX forKey:@"photoCodnt_X"];
+                [resultDic setObject:centerY forKey:@"photoCodnt_Y"];
+                [resultDic setObject:width forKey:@"photo_W"];
+                [resultDic setObject:height forKey:@"photo_H"];
+            }
+            [face_rectDic setObject:resultDic forKey:@"face_rect"];
+            
+            [self.delegate getPacheckreportWithImage:imageFrame.faceImage.targetImage andTheFaceImage:nil andTheFaceImageInfo:face_rectDic andTheResultCallBlacek:^(NSDictionary *content) {
+                
+                if (content) {
+                    
+                    //                            [SVProgressHUD dismiss];
+                    
+                }
+            }];
+        }
+        
+        
         if (self.navigationController && self.navigationController.viewControllers.count > 1) {
             
             [self.navigationController popViewControllerAnimated:NO];
@@ -128,19 +184,6 @@
         } else {
             
             [self dismissViewControllerAnimated:NO completion:^{
-                
-                if (self.delegate && [self.delegate respondsToSelector:@selector(getPacheckreportWithImage:andTheFaceImage:andTheFaceImageInfo:andTheResultCallBlacek:)]){
-                    
-                    [self.delegate getPacheckreportWithImage:imageFrame.originalImage andTheFaceImage:imageFrame.headImage andTheFaceImageInfo:imageFrame.locationInfo  andTheResultCallBlacek:^(NSDictionary *content) {
-                        
-                        if (content) {
-                            
-//                            [SVProgressHUD dismiss];
-                            
-                        }
-                    }];
-                }
-                
                 
             }];
         }
@@ -272,13 +315,18 @@
 
 - (void)createFacecheck{
     
-    NSDictionary *options = @{
-                              OCFTFaceDetectorActionTypes:self.number0fAction,
-                              OCFTFaceDetectorOuputLocation:@true
-                              };
-    self.livenessDetector = [OCFTFaceDetector getDetectorWithOptions:options delegate:self];
+    self.livenessDetector = [OCFTFaceDetector getDetectorWithDelegate:self];
+    
+    [self.livenessDetector startCamera];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.livenessDetector startLiveness];
+    });
+    
     NSString *version = [[OCFTFaceDetector getSDKInfo] version];
+#ifdef DEBUG
     NSLog(@"%------@", version);
+#endif
+    
     
 }
 
@@ -359,6 +407,7 @@
     [promptView hidePrompt];
     [self.bottomView stopRollAnimation];
     
+    
     if (self.session) {
         [self.session stopRunning];
         [self.session removeInput:self.videoInput];
@@ -374,6 +423,10 @@
     
     //停止语音
     [self playerStop];
+    
+    // 停止检测
+    [self.livenessDetector stopLiveness];
+    self.livenessDetector = nil;
 }
 
 /**
@@ -388,25 +441,45 @@
 /**
  *  加载相机图层预览
  */
-- (void) setUpCameraLayer
-{
-    //判断是否允许用摄像头设备
-    BOOL userAllow = [self toDetermineWhetherAuserAllowsCameraOperation];
-    if (userAllow) {
-        CALayer * viewLayer = [self.view layer];
-        [viewLayer insertSublayer:[self.livenessDetector videoPreview] below:[[viewLayer sublayers] objectAtIndex:0]];
-        [self.view bringSubviewToFront:self.bottomView];
-    } else {
-         NSError *err = [NSError errorWithDomain:@"摄像头不允许操作" code:OCFT_CAMERA_AUTH_FAIL userInfo:nil];
-           [self checkFail:err];
-    }
+//- (void) setUpCameraLayer
+//{
+//    //判断是否允许用摄像头设备
+//    BOOL userAllow = [self toDetermineWhetherAuserAllowsCameraOperation];
+//    if (userAllow) {
+//        CALayer * viewLayer = [self.view layer];
+//        [viewLayer insertSublayer:[self.livenessDetector videoPreview] below:[[viewLayer sublayers] objectAtIndex:0]];
+//        [self.view bringSubviewToFront:self.bottomView];
+//    } else {
+//         NSError *err = [NSError errorWithDomain:@"摄像头不允许操作" code:OCFT_CAMERA_AUTH_FAIL userInfo:nil];
+//           [self checkFail:err];
+//    }
+//}
+- (void)onDetectionView:(UIView *)preView {
+ 
+    _preView = preView;
+//    CGRect frame = [_cameraMasking getMaskingShowRect];
+    //    CGRect bounds = CGRectZero;
+    //    bounds.size = [self.imageView convertRect:frame toView:_preView].size;
+    CGRect frame = self.view.frame;
+    _preView.bounds = CGRectMake(0, 0, frame.size.height, frame.size.width);
+    _preView.center = CGPointMake(frame.origin.x + frame.size.width / 2 , frame.origin.y + frame.size.height / 2 );
+    [self.imageView insertSubview:_preView atIndex:0];
+        //判断是否允许用摄像头设备
+//        BOOL userAllow = [self toDetermineWhetherAuserAllowsCameraOperation];
+//        if (userAllow) {
+//            CALayer * viewLayer = [self.view layer];
+//            [viewLayer insertSublayer:preView.layer below:[[viewLayer sublayers] objectAtIndex:0]];
+//            [self.view bringSubviewToFront:self.bottomView];
+//        } else {
+//             NSError *err = [NSError errorWithDomain:@"摄像头不允许操作" code:OCFT_CAMERA_AUTH_FAIL userInfo:nil];
+//               [self checkFail:err];
+//        }
 }
-
 
 /**
  *  动作提示动画及声音
  */
-- (void)starAnimation:(OCFTFaceDetectActionType)types{
+- (void)starAnimation:(OCFTFaceDetectActionStep)types{
     
     //换语音
     [self playerWith:types];
@@ -417,25 +490,25 @@
 /**
  *  动作提示声音
  */
-- (void)playerWith:(OCFTFaceDetectActionType)types{
-    
+- (void)playerWith:(OCFTFaceDetectActionStep)types{
+  
     switch(types){
-        case OCFT_COLLECTFACE:
+        case OCFT_EyeBlink_FIRST:
         {
             //soundStr = @"2_eye";
-            soundStr = @"缓慢眨眼";
+            soundStr = @"缓慢眨眼1次";
             break;
         }
-        case OCFT_MOUTH:
+        case OCFT_EyeBlink_SECOND:
         {
             //soundStr = @"5_openMouth";
-            soundStr = @"缓慢张嘴";
+            soundStr = @"缓慢眨眼2次";
             break;
         }
-        case OCFT_HEAD:
+        case OCFT_EyeBlink_THREE:
         {
             //soundStr = @"4_headshake";
-            soundStr = @"缓慢摇头";
+            soundStr = @"缓慢眨眼3次";
             break;
         }
         default:
@@ -444,17 +517,15 @@
             break;
         }
     }
-    [self playerStop];
-    [self textToAudioWithStirng:soundStr];
-    
 }
 
 /**
  *  播放活体动作类型声音
  */
-- (void)playSound{
-    
-    [self textToAudioWithStirng:soundStr];
+
+- (void)playVoiceWithString:(NSString *)string {
+    [self playerStop];
+    [self textToAudioWithStirng:string];
 }
 
 - (void)sendViewClickedButtonAtIndex:(NSInteger)index{}
@@ -471,11 +542,21 @@
         //self.voiceType = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-CN"];
         //self.utterance.voice = self.voiceType;
         //设置语速快慢
-        self.utterance.rate = 0.4;
+        if (kIOSVersions > 9) {
+            self.utterance.rate = 0.4;
+        } else {
+            self.utterance.rate = 0.1;
+        }
         //语音合成器会生成音频
         [self.synthesizer speakUtterance:self.utterance];
+        _playVoice = YES;
     }
     
+}
+
+#pragma mark - AVSpeechSynthesizerDelegate
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance {
+    _playVoice = NO;
 }
 
 /**
@@ -588,7 +669,7 @@
  *  停止播放
  */
 - (void)playerStop{
-    
+    _playVoice = NO;
     if (self.synthesizer.speaking) {
         
         [self.synthesizer stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
@@ -714,8 +795,8 @@
         [self.rotationView setHidden:YES];
         [self.numLabel setHidden:YES];
     }
-    [self.view addSubview:self.rotationView];
-    [self.view addSubview:self.numLabel];
+//    [self.view addSubview:self.rotationView];
+//    [self.view addSubview:self.numLabel];
     
     CABasicAnimation* rotationAnimation;
     rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -783,7 +864,10 @@
  */
 //- (void)PAPermissionOfCamer:(AVAuthorizationStatus)camerState{
 -(void)onStartDetection:(NSDictionary *)info{
-    [self promptViewFinish];
+//    [self promptViewFinish];
+}
+- (void)onStartDetectionAnimation:(OCFTFaceDetectActionStep)step options:(NSDictionary *)info{
+      [self promptViewFinish];
 }
 
 -(void)theCounterDownWithCurrent:(NSTimer *)timer{
@@ -792,9 +876,10 @@
         [self checkFail:err];
         //埋点
         [[NSNotificationCenter defaultCenter] postNotificationName:kFCTrackNotification object:self userInfo:@{@"TrackLabel":@"人脸识别_超时"}];
+    
     }
     MAIN_ACTION((^(){
-        self.numLabel.text = [NSString stringWithFormat:@"%ld",_maxTime - (long)_timerTimeCount +1];
+        self.numLabel.text = [NSString stringWithFormat:@"%ld",_maxTime - (long)_timerTimeCount + 1];
         _timerTimeCount++;
     }));
     
@@ -805,7 +890,7 @@
 /**
  *  @brief  检测过程中对于用户行为的建议
  *
- *  @param testType 用户行为错误类型
+ *  @param type 用户行为错误类型
  */
 
 -(void)onSuggestingOptimization:(OCFTFaceDetectOptimizationType)type{
@@ -813,7 +898,81 @@
     MAIN_ACTION((^{
         [self.bottomView promptLabelText:type];
     }));
+
+    switch (type) {
+        case OCFT_DETECT_NORMAL:
+           soundStr = @"请缓慢眨眼";
+            break;
+            
+        case OCFT_DETECT_NO_FACE:
+           soundStr = @"没有检测到人脸";
+            
+            break;
+            
+        case OCFT_DETECT_MULTIFACE:
+            soundStr = @"多人存在";
+            break;
+            
+        case OCFT_DETECT_ERROR_YL:
+            soundStr = @"角度过于偏左";
+            break;
+            
+        case OCFT_DETECT_ERROR_YR:
+           soundStr = @"角度过于偏右";
+            break;
+            
+        case OCFT_DETECT_ERROR_PU:
+            soundStr = @"角度过于仰头";
+            break;
+            
+        case OCFT_DETECT_ERROR_PD:
+            soundStr = @"角度过于低头";
+            break;
+            
+        case OCFT_DETECT_ERROR_ROLL_LEFT:
+            soundStr = @"人脸过于偏左歪头";
+            break;
+            
+        case OCFT_DETECT_ERROR_ROLL_RIGHT:
+            soundStr = @"人脸过于偏右歪头";
+            break;
+            
+        case OCFT_DETECT_ERROR_DARK:
+            soundStr = @"过于灰暗";
+            break;
+            
+        case OCFT_DETECT_ERROR_BRIGHT:
+            soundStr = @"过于明亮";
+            break;
+            
+        case OCFT_DETECT_ERROR_FUZZY:
+            soundStr = @"过于模糊";
+            break;
+            
+        case OCFT_DETECT_ERROR_CLOSE:
+            soundStr = @"过于靠近";
+            break;
+            
+        case OCFT_DETECT_ERROR_FAR:
+            soundStr = @"人脸过远";
+            break;
+            
+        case OCFT_DETECT_ERROR_ILLEGAL:
+            soundStr = @"非法人脸警告";
+            break;
+            
+        case OCFT_DETECT_STAYSTILL:
+            soundStr = @"请保持相对静止";
+            break;
+    }
     
+    if (self.soundContor && !_playVoice) {
+         [self playVoiceWithString:soundStr];
+    }
+    
+   
+   
+//    [self textToAudioWithStirng:soundStr];
 }
 
 #pragma mark - 检脸成功，进入动作环节
@@ -821,13 +980,13 @@
 /**
  *  @brief  动作检测
  *
- *  @param animationType 用户动作类型
+ *  @param type 用户动作类型
  */
--(void)onDetectionChangeAnimation:(OCFTFaceDetectActionType)type options:(NSDictionary*)options{
+-(void)onDetectionChangeAnimation:(OCFTFaceDetectActionStep)type options:(NSDictionary*)options{
     
     MAIN_ACTION((^{
-        [self stopAnimations];
-        [self.bottomView closePromtpView];
+//        [self stopAnimations];
+//        [self.bottomView closePromtpView];
         [self starAnimation:type];
     }));
     
@@ -876,12 +1035,11 @@
  *  当前活体检测的动作检测失败时，调用此方法。
  *
  *  @param failedType 动作检测失败的原因（具体选项请参照PALivenessDetectionFailedType）
- *  @return 无
+ *
  */
 -(void)onDetectionFailed:(OCFTFaceDetectFailedType)failedType{
     
     MAIN_ACTION((^(){
-//        [SVProgressHUD showWithStatus:@"请稍后"];
         [self stopcheckFace];
         [self stopAnimations];
         NSError *err = [NSError errorWithDomain:@"OCFT_FACE_CHECK_ERROR" code:failedType userInfo:nil];
@@ -896,7 +1054,6 @@
                 {
                     //停止活体检测步骤
                     [self stopcheckFace];
-//                    [SVProgressHUD showWithStatus:@"请稍后"];
                     [self sendImage:faceInfo];
                     
                 });
@@ -911,9 +1068,11 @@
         
         [self initHardCode:NO];
         [self stopcheckFace];
-//        [SVProgressHUD showWithStatus:@"请稍后"];
-        
         [self backToAppAnimated:YES];
+        
+        if (self.delegate && [self.delegate respondsToSelector:@selector(getSinglePAcheckReport:error:andThePAFaceCheckdelegate:)]){
+            [self.delegate getSinglePAcheckReport:nil error:error andThePAFaceCheckdelegate:self];
+        }
         
         if (self.navigationController && self.navigationController.viewControllers.count > 1) {
             
@@ -923,9 +1082,7 @@
             
             [self dismissViewControllerAnimated:NO completion:^{
 
-                if (self.delegate && [self.delegate respondsToSelector:@selector(getSinglePAcheckReport:error:andThePAFaceCheckdelegate:)]){
-                    [self.delegate getSinglePAcheckReport:nil error:error andThePAFaceCheckdelegate:self];
-                }
+               
             }];
         }
     }));
@@ -937,6 +1094,19 @@
 - (void)backToAppAnimatedWhenClickBlack:(UIButton*)blackB{
     NSError *err = [NSError errorWithDomain:@"界面操作_用户点击返回退出检测" code:-1000 userInfo:nil];
     [self checkFail:err];
+    
+    [self.synthesizer stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
+    _synthesizer = nil;
+    _utterance = nil;
+    _voiceType = nil;
+    
+    // 停止检测
+    [_livenessDetector stopLiveness];
+    _livenessDetector = nil;
+    
+#ifdef DEBUG
+    NSLog(@"destroySDK");
+#endif
 }
 
 

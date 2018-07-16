@@ -153,7 +153,7 @@
 
     
 //    [PAFaceCheckHome setFaceEnvironmentWithDict:environmentDict];
-    PAFaceCheckHome *faceVC = [[PAFaceCheckHome alloc] initWithPAcheckWithTheCountdown:YES andTheAdvertising:@"" number0fAction:@"2" voiceSwitch:YES delegate:self];
+    PAFaceCheckHome *faceVC = [[PAFaceCheckHome alloc] initWithPAcheckWithTheCountdown:YES andTheAdvertising:@"" number0fAction:@"3" voiceSwitch:YES delegate:self];
     //    [self presentViewController:faceVC animated:YES completion:nil];
     
 
@@ -402,7 +402,7 @@
  *  @param error        检测失败报错
  */
 //失败的report回调
-- (void)getPAcheckReport:(NSDictionary *)faceSingleReport error:(NSError *)error andThePAFaceCheckdelegate:(id)delegate{
+- (void)getPAcheckReport:(NSDictionary *)faceReport Image:(UIImage *)faceImage error:(NSError *)error {
     // 推入失败页面
     [self qh_pushCheckFaceFailView];
     if (self.faceRecognitionComplete) {

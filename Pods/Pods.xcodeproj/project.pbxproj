@@ -12,16 +12,16 @@
 		02FC5944FB5D087E08DE141EE50498F6 /* NSBundle+QH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5D485A6F13CFC5BD8C28E0B37E357A /* NSBundle+QH.m */; };
 		043955B46F03F59FF6ED33B172978CF4 /* QHCommandDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F36A1086ACDE538555DC6AC424D56FD5 /* QHCommandDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E28A3EBBFDF3EA376ED54F52583CEE /* QHScanResultViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 231066357A7E4D6EAD6B2C96B68FD288 /* QHScanResultViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04F652408125B320ACBDE9FDF037FAA1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236A074817EF9FBF37EEE6A39004A0FE /* AVFoundation.framework */; };
 		08E106D45D3F6242B38601EE0321EB39 /* QHWKProcessPoolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A20798C899C738996D66A517BA7FD /* QHWKProcessPoolFactory.m */; };
-		09B737F3C424BFE1343B112304AB6F62 /* PAFaceCheckHome.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B8C467FD6E44668C56C57A2CC61CEA0 /* PAFaceCheckHome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09B737F3C424BFE1343B112304AB6F62 /* PAFaceCheckHome.h in Headers */ = {isa = PBXBuildFile; fileRef = 869549C252858B616A35EECB10BA5C63 /* PAFaceCheckHome.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A4EE29726C5E43F8ACBAEF46E16C1E0 /* QHWKWebViewEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3167D50F3ED4FCE17260E223610DEED2 /* QHWKWebViewEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D984752B61B8F28F3B751E7C06E2CD6 /* QHPlugin+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A7EED960594262621BCC42801AC0D7 /* QHPlugin+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0ED514094EA3113D2F591C4D5CE98AB6 /* PAFaceCheckHome.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB110A7360D34669A82FFD23123FFDBC /* PAFaceCheckHome.mm */; };
+		0ECBF16B3308A2CFFCC350484902E1F1 /* FaceRecognitionLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 928E5506DAEECFFCE47E68937D8B03E5 /* FaceRecognitionLib.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0ED514094EA3113D2F591C4D5CE98AB6 /* PAFaceCheckHome.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AA115F0AACBDEA144989C4694D0139F /* PAFaceCheckHome.mm */; };
 		133DA71A5C00D539D281CB0F8DC20AD3 /* QHTakePictureDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CB05E9F734D1D2069F3EFFEF85E138A1 /* QHTakePictureDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13BEB3203885775E7EF9E3C6BD71F1A2 /* SendFailView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2109B8FCF00A43FEEF1EA326B5BD291C /* SendFailView.mm */; };
+		13BEB3203885775E7EF9E3C6BD71F1A2 /* SendFailView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A9C159B9067622AB759583C502464 /* SendFailView.mm */; };
 		141A93156E3DD48256209EEBAB0DF104 /* QHPluginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ACC0095861BFF1A3428D4E91DA97A8 /* QHPluginResult.m */; };
-		1576CEBF995ABA200ACA2B7F8629EE71 /* PACircularRing.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EEE300910C26755126E58DA054F27C1 /* PACircularRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1576CEBF995ABA200ACA2B7F8629EE71 /* PACircularRing.h in Headers */ = {isa = PBXBuildFile; fileRef = 91A8A9965758072E52DBB7985DD0FF17 /* PACircularRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		175A9BB209C97EB14F459C43D687A0C3 /* QHDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D050E834613A23E69BC5F07E1177216 /* QHDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1903A1FAFD3E8075E36F046EC49AE72A /* QHScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 233E3B85BB4CBE5D4039995DE2BB64B0 /* QHScanQRCodeViewController.m */; };
 		198F9EE9A13B10752922C0F3E0EE4B7B /* QHFetchFaceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FA16C8571DBEBE4E97FA6AEE3CAEAFB /* QHFetchFaceViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,16 +30,15 @@
 		1C858DF0A55EB549507DAC262451F8C5 /* QHGradualHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF2399ED6AC1AE3348E278D09FC3909 /* QHGradualHeadView.m */; };
 		1F90145969925E8C66F2980989C06E4C /* UIColor+QH.h in Headers */ = {isa = PBXBuildFile; fileRef = 1215AC1D694835ADD37968FAA8A08CC5 /* UIColor+QH.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		210BD6034009ABA4C96B63BFEE59D0D6 /* UIFont+QH.h in Headers */ = {isa = PBXBuildFile; fileRef = D902E83433C9FAC39F93BDD7B63A708A /* UIFont+QH.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2191AA1806C54DDE04335507C9641D78 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26FF2AD95C1FED8BEF69DE6FF8728D4 /* AssetsLibrary.framework */; };
 		2266B28C1A78D9925C6CD7183DCF67B5 /* QHGradualHeadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 509505D1149989A90A2E28B52ADE80B7 /* QHGradualHeadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24828A35C5B895C2CDBAAA6CC8AE8984 /* QHContactsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA9F796349BB2E60DC35EC6E5982184 /* QHContactsPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2754E9956C65F7D6B9F700D9B4DB7137 /* Webkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7BD83BCA0488873E84D44D2F6426B9 /* Webkit.framework */; };
 		2757749CC5664128DB27C26487784394 /* QHWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E88ABAA9560D79209D71F41E4B41533 /* QHWKWebViewEngine.m */; };
 		29D25C98841DF12634ECE356E630B9C5 /* UIWebView+JavaScriptAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = C34E033C8E052C0B8F234DAEC3C09A81 /* UIWebView+JavaScriptAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C059C5707C567B3CD4C78C408833613 /* NSURLProtocol+WebKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53755041FFF4687C5C227CAD5D2ACE /* NSURLProtocol+WebKitSupport.m */; };
 		2CCCED0225C498651669C324AE9C1CE2 /* QHCommandQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9E94E0B15B12766557D8E2499A895A /* QHCommandQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D226E9573E70E983D3A0BC20DFEB90D /* myface.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AB48A94974F248CB237108D61A07F57 /* myface.bundle */; };
+		2DDEF9BF8BCA6B3D81AD78A6580D662D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F355D5ED707759929B994053604EA75B /* CoreVideo.framework */; };
 		2E581B6389D1A8AA16BA0934716526F5 /* QHLocalStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C89CB1D836C5CCD7168D8561646590B5 /* QHLocalStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2EB438C4CF84A83B203057716CCABE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640866376E1022C6E73AE365C60A2F33 /* CoreMedia.framework */; };
 		2FE54037CB044608C12FCED43721EBC0 /* QHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 752B8F94AC97F28780E8CBB335BEE005 /* QHAppDelegate.m */; };
 		30A6EB9AD35276BB87CE8410962AFF6A /* QHNetFailView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AA3E59CA618575FC38AB6E1AE457833 /* QHNetFailView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32E242D1FD4BE6C0C39607D0AF598DB4 /* NSLayoutConstraint+QHMASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8830489A160EDEE9082198A8B3D0DDF3 /* NSLayoutConstraint+QHMASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,10 +48,11 @@
 		37D8161EA42E4E9D93C8A536FA4333C7 /* QHInvokedUrlCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2D46DF0A518AFB64D6EB6E54410D41 /* QHInvokedUrlCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3833224DAEDF7866178BE3B9745DA9CB /* NSDictionary+QHCordovaPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 525332459ECEA7826333BC384B9CFF90 /* NSDictionary+QHCordovaPreferences.m */; };
 		3AEF5A796AC310E42A562E19254273EB /* QHFetchFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06E3FF257D4070C553CAF80E4B7A33C /* QHFetchFaceViewController.m */; };
+		3CE2691252D9A3325D3E67860044DF9B /* Webkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3611762AF687ADBD911F0B0E43033F3F /* Webkit.framework */; };
 		3D5B64323988B432E370494B1EE2933E /* QHMASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8DF3304C187503BD6049AE955D87AE /* QHMASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E7C5831663A5D2E9CB38C12330632F4 /* QHFaceCheckDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8D9067946DB5B303E0A335E15889213 /* QHFaceCheckDelegate.mm */; };
 		40656013B04E12F2017FE10655F30C26 /* QHEGOCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EF86206565BCD3054309256D1ADB4B /* QHEGOCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4138C0E07D2896B8962BF85BA230F2DE /* PAZCLTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAAAE033E47001CA0B86696330B6B20 /* PAZCLTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4138C0E07D2896B8962BF85BA230F2DE /* PAZCLTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 97FAAEC635F4F4AE545A97C0E2FEE2B5 /* PAZCLTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41FAE760561E5696814D88AF550573A1 /* QHGestureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F24A4367DFDB07C7A0146CAB3BCA98 /* QHGestureHandler.m */; };
 		4275E22C13B275FBB985F5411B24A84F /* QHJSON_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 26E59C4E98506DFFC1B39F3CA35DFF95 /* QHJSON_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42822C3F593C32E4263C5A54A27B4018 /* QHPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 02532A866AAB3E1E2B3F41BE7F8133BC /* QHPlugin.m */; };
@@ -71,27 +71,27 @@
 		577A4C216677695730E9B77BC954D0E5 /* QHBasicMessagePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BE45495908D9D8A3D69068D0A8D39D /* QHBasicMessagePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5902FA907FBC80B4596CFA675AB29C4A /* FetchCardCameraCover.m in Sources */ = {isa = PBXBuildFile; fileRef = D0615CC3C02106314ECD9EDE00759647 /* FetchCardCameraCover.m */; };
 		59247584FE2EAB5D0B927AAEB0D78547 /* FetchCardCameraCover.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0B98DAA82EEE84FEC708801B6DEE10 /* FetchCardCameraCover.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		594D784DF0C0A147E13AEF54E610D0B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C99A94A60423F623251AF6F543C4DAD /* UIKit.framework */; };
 		5A92CF20B4AD6D39E8E4484898D126E4 /* ViewController+QHMASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4397D7FBE8EA299810EA060E8D9A3902 /* ViewController+QHMASAdditions.m */; };
 		5B5411A69E627D8F1D243311C5F71FF6 /* QHURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6BE87FB150F6C74650DDE47139F9B8 /* QHURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BA213D7CF2FC0FEC7C72690F5841DF2 /* QHNavigationbarPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1BEB02085D365C238BA4F30CE4CA2 /* QHNavigationbarPlugin.m */; };
+		5C75A3AA23E9708DA8A4B463FEF58EF6 /* ACEFaceKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A54151281A0AC5AD77D5B7F3DF27A5EA /* ACEFaceKit.bundle */; };
 		5D9DC1933E9216C3C65403EFF03E393B /* NSArray+QHMASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 586FE4EDB67DE470D705A3B2DEA3C639 /* NSArray+QHMASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EB845AD5B94684C92DD003B633DAC7D /* NSArray+QHMASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC420AF3493B3C073C1C40382593711E /* NSArray+QHMASAdditions.m */; };
-		5EC2287A7B769A0E3B435B186F815092 /* PABottomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8F6E95C6A43A20887EB735887CC685 /* PABottomView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EC2287A7B769A0E3B435B186F815092 /* PABottomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6FE541D06C9259215CC7784587DBBC /* PABottomView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EDAD8E9DD897E4A4468549BC0D57C9F /* QHLoanDoor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E40088100FFD903B7254105BC97B086 /* QHLoanDoor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EE7232EED038D8A094753EE44EED5E3 /* QHViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F7D17AFB0B53EB4329ACA2B7F5D771 /* QHViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F52671B8EAD9C2233F4946A88F842B6 /* QHUIWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B25FF4B5B22B417B908177C0F63589 /* QHUIWebViewEngine.m */; };
 		5FCFDE831CDFFB6D149E7F6D3DA9DD90 /* NSArray+QHMASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 64CC9C5C15A936D1176C8B2B8F897A9C /* NSArray+QHMASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60048FD0EA078BA98B414A627BE94B5A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D365BFCD5867E343D31259FF531EC86 /* CoreVideo.framework */; };
 		60E34C0E0B1DEA494910343E956544E8 /* QHFetchCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D687ED0D27C945948278D91DF5A7D9C /* QHFetchCardViewController.m */; };
 		6125579331E41A9D2EFB7882E04FA75E /* UIFont+QH.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F06701C3619BDE2BED71F93DAFADF7 /* UIFont+QH.m */; };
+		61A230353534C40E70D22B3BFFC5FEDD /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DBA51DCC7B2F1FC7C76F0CAB0F62E1 /* CoreImage.framework */; };
 		6240C18AABADFD86AF0E06D58BD9EBDE /* QHContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 637D44C179334637056C541FBCA11021 /* QHContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64FD918E770711ADC5E83CA8F1255DBA /* QHContactsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBD6C92A842BEEC90CFC246FA17438C /* QHContactsPlugin.m */; };
 		6557467CAC9ECA831C0D62F74AAAD6BA /* QHGradualImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8382788CA29D853EA9DDB7F40765DCC6 /* QHGradualImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		681E20B5835965C2230E4EA42CDEBFE9 /* UIWebView+JavaScriptAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 94926F69414AAB927EED0B61B359042B /* UIWebView+JavaScriptAlert.m */; };
-		6868F79B73C6E6E71B430450438CFE17 /* PACircularRing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49A9AB0B977E8DCCA9C2E9C212A760A4 /* PACircularRing.mm */; };
-		68A19A708C82D4EC3EADC79C9977CF9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE448115F0B9654A5958049B2A1882B /* Foundation.framework */; };
-		6AB08A54D45A79E5B123D7DAA208B51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE448115F0B9654A5958049B2A1882B /* Foundation.framework */; };
+		6868F79B73C6E6E71B430450438CFE17 /* PACircularRing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66389D43FDC3E1F8CD74EBDEA4B114E2 /* PACircularRing.mm */; };
+		68A19A708C82D4EC3EADC79C9977CF9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD4746660F72A6E1BF0E5157F4AC569 /* Foundation.framework */; };
+		6A3479C863006CBDA0C7DA57446036F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D7038ED49CB4C9E21F700BF6E9FA81 /* CoreGraphics.framework */; };
 		6B078D0EF4BE4C70D92CF58142D9588E /* QHNetFailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E490B980CD2D08512D73BC80BBDB04B /* QHNetFailView.m */; };
 		6BD808176947F715FF713CDD4077A41A /* QHLoanlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0526FB5C553E8CDC27CBE313DE473EF5 /* QHLoanlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BF0A827FB7F701221937A40919545A4 /* QHInvokedUrlCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72ECDDFD8A4F97F806C21F69816E04 /* QHInvokedUrlCommand.m */; };
@@ -101,7 +101,8 @@
 		718356D5152649D258339A0482C75CF4 /* QHFetchAlbumPictureDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C2B27FE6D9605F4ABD9B8199F2273876 /* QHFetchAlbumPictureDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72843C48C33BAD73030249B363DC5D43 /* QHCheckFaceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F9EE3A969BBCB9563BF1E673A0308FC5 /* QHCheckFaceViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72A11E8F56733598B2AA9A1C8091A315 /* QHCommonPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = BB82C32A237313932CCD06AEB615F972 /* QHCommonPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77A60CB866F898ED977370209EF90C1F /* PABottomView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DDE9CA5404DBA86E3E55F1E4DF4BC43 /* PABottomView.mm */; };
+		7433468E243EF15C71513C854565B71D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AB99F00327861FE3AA2E9DAF640811 /* UIKit.framework */; };
+		77A60CB866F898ED977370209EF90C1F /* PABottomView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67D87AD793D293A9BCA7583A22D2687A /* PABottomView.mm */; };
 		77EADF1A75B93948A60DBA2E29B1DC4F /* QHPopPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DAA3538850119C2CF4EC9C9F679395 /* QHPopPlugin.m */; };
 		79B0547E4F7C4755D3B3A0512CA70780 /* QHLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB7988317C76054B4DDB21105B9BF1 /* QHLocalStorage.m */; };
 		7A01C445934E01F4A996BD49248FE8D1 /* QHCameraPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 230448D81A568A0BCC08203F5AD6A17C /* QHCameraPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -109,15 +110,17 @@
 		7C1E7FE2B8A32314DEA22424512ABD75 /* QHUserAgentUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A649C0B5EBB4A2E68CF24902BFB7901 /* QHUserAgentUtil.m */; };
 		7C7BE793A5A2598CA3DD30DCD07E4C5F /* QHWhitelist.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E855C074FC5175E2739AC42BD1E1E8E /* QHWhitelist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D306DFE5A7A072497113DC24922B58E /* QHPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 49BDE3F834DCA67E35B0155C22D9BDFB /* QHPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F9F205B908F97A268425BA683E2CF53 /* QHLoanDoorBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DDFE60E4B9251D96E65EF5F4F88D9E4 /* QHLoanDoorBundle.bundle */; };
 		810D49E5F641CC4322F62A53BB84F94F /* UIImage+QH.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF8116252FBA8044BF9554BE34F3B6E /* UIImage+QH.m */; };
 		8123787D55C0EE87FD2D72DD62446F4D /* QHNineBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1760096C1D929016C4F3D526C4DF50 /* QHNineBoxViewController.m */; };
 		828AD7DBB40B6592916FC56E17CC4B5D /* QHUIWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB63506E9C452860A920A1FB5D2AB76F /* QHUIWebViewDelegate.m */; };
 		83000C85DFE81E1F9914A841631C8129 /* Pods-TestOCPodLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB37E270A1B8DE46C58FCE1F3F0F073C /* Pods-TestOCPodLib-dummy.m */; };
 		83BA9B72C0B43F1C12DE48B9C733DA55 /* QHPluginResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 516D43535E08A282D6DBEB12E9C4861B /* QHPluginResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8426D3BCBEA1899D04FE89CD6189EB76 /* QHInterceptProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DC809951BC6B55EC8537E896DD2D24 /* QHInterceptProtocol.m */; };
-		845A169F9DC1F0BE50AA5FA64875E022 /* PAPromptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF97D9217A32C049927BB288F485224 /* PAPromptView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84BFDFCEA9B358A162E7DC06CE9708A4 /* PAZCLTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = AAD715E5C94A93D3B0150F0D47A94856 /* PAZCLTools.mm */; };
+		845A169F9DC1F0BE50AA5FA64875E022 /* PAPromptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 182484CA868723510BF275D910E86391 /* PAPromptView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84BFDFCEA9B358A162E7DC06CE9708A4 /* PAZCLTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3EC2695168936C8CFC585D456D6D10AE /* PAZCLTools.mm */; };
 		84D61CBE409418E30800BA7F823580A4 /* NSMutableDictionary+QH.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE68ADDCA8C07BEDD6E80E1084084F0 /* NSMutableDictionary+QH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85E6066935E6A32F1D8EAD030A7B675F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7177FDE6E9FAFB7A649BFCABC6B5D829 /* QuartzCore.framework */; };
 		86494790CD8470B5B8ED4AB187109636 /* QHAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AED7F7EC78B6C4A17A1A2D42BC155175 /* QHAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87794D415372BA7AEB5BC0F9C89EB81E /* QHFaceCheckDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FEE9964CBFC8D8005B86F66076C0B17 /* QHFaceCheckDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A2A1C5AC7EE654C93C9288C69BC8CCD /* NSBundle+QH.h in Headers */ = {isa = PBXBuildFile; fileRef = 3503A25ED2F1D3EAC0863D63FE5D123A /* NSBundle+QH.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -126,34 +129,35 @@
 		8E41F3AFCAFAB73233611140F1B9C4CC /* QHMasonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 93CC294792F8E9C9B465F8DF6F758E2F /* QHMasonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90615960E2D033E062EDB69099831746 /* QHMASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5EB429EFB1FF35165AE6084EA60011 /* QHMASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91B8327CF260722B4E7C1441F22639A7 /* QHLoanDoorBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BA9811D1769DFCE526064DCF544C5F /* QHLoanDoorBundle.m */; };
-		91EDF32FC39DCD117AC3E89849F957F0 /* PAPromptView.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8C4EBED8C9A6C15FEC537E8B047E89 /* PAPromptView.mm */; };
+		91EDF32FC39DCD117AC3E89849F957F0 /* PAPromptView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 803CB630E85FE431E673FCA6A4030608 /* PAPromptView.mm */; };
 		935E3F36047E10CF24D35E4E27973B30 /* QHCheckFaceFailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB5827DDD46C7E5376C68B76CF5597C /* QHCheckFaceFailViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		939EEB77CFC1A25B67AF5169ED428D50 /* UIView+QH.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAAE4869D11E7F14D5016D3D27B9917 /* UIView+QH.m */; };
 		94EC5420AC7BCBA787C580667A103F36 /* QHLoanDoorBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = FE5C905D67F454FB2F3EEF8A4B0D3BC7 /* QHLoanDoorBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96A5F26C457390EBC0D2745D1A3ECF96 /* QHHandleOpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4D51CEB6900C65EBD0AF823065D236 /* QHHandleOpenURL.m */; };
 		9709FD691CEE56084F4B2EC2B123E941 /* QHPopPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDE60518D1ED9B5EFC2B3433EB40E38 /* QHPopPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97AFF8443BD8DE3AC4EB14B3CF6B7E1B /* QHMASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1177666A5F95F04E52A5D4E3232B69 /* QHMASViewConstraint.m */; };
+		9C32B1EC972CBC7735B43816884B3A69 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DBF7C887EA59F30FFA1E00985BA998 /* AssetsLibrary.framework */; };
 		9C8B061DF2B2AF903435E8CB63B8A344 /* QHCommandDelegateImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = D312B325A456D2DCCFC72BBC49C72266 /* QHCommandDelegateImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CA7050CF6AA436DFB98766BD00DB6B6 /* QHScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66165D6DA6B97621699ED2B7DAC39FE /* QHScanResultViewController.m */; };
+		9DF1A6AE5719931234270B8941A08016 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87F0AA3726897BD8FA4D2B07A3AEDAE /* AVFoundation.framework */; };
 		9EABFA637E677453CAFFD9F0434BDDCA /* QHWebViewEngineProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D546B21597DF153226FBA8D214FC830 /* QHWebViewEngineProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F06923F792FC99F5D3430501B7759BC /* QHAlertManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E1E2D2ADB627F29AFEB52AB821B9B /* QHAlertManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A00016992D43DA5504DC1A4ED9639552 /* QHUserAgentUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 40197BA7CB42BEF44A164E40CF92974A /* QHUserAgentUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2FFC0102D6DEDCF65A2CB3AD46EFE98 /* QHAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA78F4B9FE7994DCC2CEE856923B9AA /* QHAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6A1E716D1025F04F44DCB410559C6B8 /* QHTakePictureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AB874D33333EACBE6C03583927A673 /* QHTakePictureDelegate.m */; };
-		A9E81036E8F666EC2E7DF944DF21F9FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE272AB84EC0596D57A451EEAAF0C05A /* QuartzCore.framework */; };
 		AA46989A5C73156F6B4D33B53D48EBE7 /* QHGeoLocationPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D59449600CB14018A0EBBBDE20FF1531 /* QHGeoLocationPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA8BF435CD612AEFD775293511139B96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD4746660F72A6E1BF0E5157F4AC569 /* Foundation.framework */; };
 		AA9369C54EC8BBB35794DD22963A7960 /* QHMASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 75FB140B210D10C8D2397C90C2D98E75 /* QHMASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AACF010141BC8F1FC08CA43EFA8D9C38 /* UIColor+QH.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BC72D4BA9F44F01357D216E2DDAFEC /* UIColor+QH.m */; };
 		AAD49A9BF90E6F92424ECE84A536C4FE /* NSMutableDictionary+QH.m in Sources */ = {isa = PBXBuildFile; fileRef = DE199C9551EA635C1E87A6D8B07ED223 /* NSMutableDictionary+QH.m */; };
 		AB8DE7236390BFC4DA3F366C932B5CAB /* QHMASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EDCC84F156DC8ED7781E2989DAF1F /* QHMASConstraintMaker.m */; };
+		ADE075D263B246291E11D39A5E0CE03B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC49BB077C8F1B4C4142A0CA92F3D8B /* Accelerate.framework */; };
 		AF5EB45C930069FBEE44D670AEEB2FA8 /* QHURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B037A2AF92AD9BCF5F6848A40E6D0 /* QHURLProtocol.m */; };
 		B19A4775CF7906CDEA953161B256F521 /* QHScreenOrientationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 72B0257CBF299531736E47E89842C5B5 /* QHScreenOrientationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B236CE7158BDD10C5C42ACDC6DF6E640 /* QHMASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 469057DC938CB1D4E7EFEAA52CF90F8D /* QHMASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3AF38F8278B6C67A04F9E76CB9A7566 /* QHScanQrCodePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3445FFDBB64AA6CA6F323AB19AEEF3DF /* QHScanQrCodePlugin.m */; };
-		B8EEDCC8E9C7F890142E172509F16BD5 /* QHLoanDoorBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DDFE60E4B9251D96E65EF5F4F88D9E4 /* QHLoanDoorBundle.bundle */; };
 		B9F80B1F914DE210B39E6A4856DD44D0 /* View+QHMASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA786E153A3F0420D287B5847AEE257 /* View+QHMASAdditions.m */; };
 		BA34F26F04B05EB879A5926345A4173A /* QHContact.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDDFD039E4637FDD56AD90198AB1763 /* QHContact.m */; };
-		BAF239B6DD62ACC52B602F7124595DCD /* OCFTFaceDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C668EC4C9EAE888DCE4AC4C3B900672 /* OCFTFaceDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDE289A6A7EE69C85B39E2333D555A97 /* QHFetchCardViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 878708EC6B2E337F1CE8CBE392E46E3D /* QHFetchCardViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFA3045F6A0A5E0A922349E8ACCE03FC /* QHLoanTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E796244576CA91F35F20E67DBF7D3A0 /* QHLoanTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0184B2D90B466BB26334F1E7CE79EB5 /* QHMASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED81092F247E1E0B5338B6312AA6288 /* QHMASCompositeConstraint.m */; };
@@ -166,12 +170,12 @@
 		C7D75DAE05C522C584C8DD8517FA6FDF /* QHCommonPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 800E230EC6DF1A9DF103D3204F676572 /* QHCommonPlugin.mm */; };
 		C85E1782D082B1B6B260AE327C7AC101 /* QHBasicMessagePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D651A5BE4BE1E27BB20A458C3ADAFF6 /* QHBasicMessagePlugin.m */; };
 		C871811513F9CD9F586C9A2618FD75C6 /* QHScanResultCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC588097D1B8B23DEAAED28F470C46C3 /* QHScanResultCollectionCell.m */; };
-		C8BF44D62CA5BD7D6ACAAE8964703A89 /* FaceRecognitionLib.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CFC02306B4C9EE1E1B2F99F9ACAA9D /* FaceRecognitionLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8D65B46F05CD93BEC1082B5A22997B8 /* QHMASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6C0DB1092996684E0F6D25E709840 /* QHMASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBFED49D0937058611454FD81D5E0EF9 /* QHCameraPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87347A8080E842BFF17EA3B85F1D04CB /* QHCameraPlugin.mm */; };
 		CC4B9C8876F874360B0D56CAC9C783BE /* YYStudio_LoanSDK_All-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A996AE798CFE407AA4C14ABC0ABBD62 /* YYStudio_LoanSDK_All-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD6EA8120149A3DF9DDF360C62467E27 /* NSFileManager+QH.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB3E427C257A0FEDD5409F2CF0A7623 /* NSFileManager+QH.m */; };
 		CE3BE087D9A6CA30142CB62B3BBCAEE8 /* QHInterceptProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 541F0399AC4F6DA61585E0FE5EC6E2EF /* QHInterceptProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF79EA1BDE2FB6CFD5A5EAB126060290 /* myface.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B29C29C72E84A24023F4EC4657CA7EA9 /* myface.bundle */; };
 		D1B47A22A0B14C15EB0C41A29FE84165 /* UIImage+QH.h in Headers */ = {isa = PBXBuildFile; fileRef = C0117F09D903D312E64B91A2BAB5F1CB /* UIImage+QH.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D27BB5565FFA21793028213642B6520E /* QHUIWebViewNavigationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0512CA5E52A1B1E3E77FFDD8437D5238 /* QHUIWebViewNavigationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D280554E4448C6BA8B329865643CF6CE /* QHCameraImageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 57130FC5D49062CCE01B6D26B2C39F76 /* QHCameraImageHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -179,7 +183,7 @@
 		D418DB3FC828C2643F18462723E7D3ED /* QHMASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 890089562D9B34051F55704AAAA24E7D /* QHMASViewAttribute.m */; };
 		D41CD0E4B4CF7481F2D67677E0D76131 /* QHLightBlackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9031DFBCF06EBE56410F26AD2017CC49 /* QHLightBlackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4255940E4AA59367A5DD21832693F03 /* NSFileManager+QH.h in Headers */ = {isa = PBXBuildFile; fileRef = 56125DD69D0FCDADF2210CC47C9FAED7 /* NSFileManager+QH.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4C4C43B19715B41930574436A745F6A /* SendFailView.h in Headers */ = {isa = PBXBuildFile; fileRef = 96CCDF1C378D5FC05E8CC3B82C3770B9 /* SendFailView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4C4C43B19715B41930574436A745F6A /* SendFailView.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B0C4480057F26CF81EF20D092AFA1B /* SendFailView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4E9FA0D103CD4A822E98381154FAE1A /* QHCheckFaceViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B004ED99E52A2D876DCBC29542300220 /* QHCheckFaceViewController.mm */; };
 		D56F088813BB004D838F94BAFD540408 /* View+QHMASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B14CC96857189F2E47DF46F5A69573A /* View+QHMASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D62538F808E3482CCF2E1D305F33B72C /* QHGestureHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A992A0707C636A89D609A13DC1BF614 /* QHGestureHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -188,6 +192,7 @@
 		DCC08AEF998A7C5C7897523BA78B5FF2 /* QHPlugin+Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 5006258BC69F6A4C641100FE9E0AD28A /* QHPlugin+Resources.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF653BD1B54FE9476F1E29BD467A4DFC /* QHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A4F4D09F0C7E621656E1A40D7013D /* QHViewController.m */; };
 		E058E5B74077F764501F2C000FD54460 /* QHLoanTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B046686CD247BB415337A97CDEBC0ADE /* QHLoanTools.m */; };
+		E14CF95BAC79B7CCCCD2865C24BBA55C /* OCFTFaceDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BF89C94B65BAF230C1CEEF0CB5B69AC /* OCFTFaceDetector.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E1BC2A858CD014675F2DBF299C360DA3 /* QHUIWebViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 292F39EA70084F1E6B323C4182284FA9 /* QHUIWebViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3043156BD5E736913E62D1F00B1A77C /* QHEGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7CC456BA8AB9ED82EEFECD372B3D55 /* QHEGOCache.m */; };
 		E3ED7D2D7AB5672EED65645408A1E98D /* QHMASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF2211EEF6BD40359B5F62C19BAC78D /* QHMASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -203,11 +208,10 @@
 		F76BFED404880BA3FB4ED221F7306CE2 /* UIView+QH.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB0AD8A520B7834CC749339A690E6D5 /* UIView+QH.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F85C463E141991D8D229F44A50DD3E8D /* NSMutableArray+QHQueueAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FD80CDAE69833EB9D5A7748F6FAE5D47 /* NSMutableArray+QHQueueAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA161D51B2AC5C5AAF5D5648C082CFA8 /* QHWKProcessPoolFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 994ACB6F933C60DA3F4B6BC10BB3F129 /* QHWKProcessPoolFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAA8E61D7AE54F6363672C31557C9DB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6D2298F718BDD99BB3F03200C537DB /* CoreGraphics.framework */; };
 		FBE37348CE4026FD9BA2E8EA43A56C58 /* QHScanQrCodePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 87FA2E5137676D5D6029C56E2D46ED96 /* QHScanQrCodePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBFA04A15D47FBA44CDE26F8040766D5 /* QHGeoLocationPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F31511BAC822D36FA97E3D9387B69954 /* QHGeoLocationPlugin.m */; };
 		FC58548547A3C41087AC00C1CD7122DE /* QHNavigationbarPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 687A33C9A9709FDFD4043A7339CFC4A6 /* QHNavigationbarPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDB7E73507B1348F6C550013094A8CC7 /* PAZCLDefineTool.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9DFF105491403C98994D9ADF21DA0F /* PAZCLDefineTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDB7E73507B1348F6C550013094A8CC7 /* PAZCLDefineTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CA1C54C93F410FBC1CA482CA33DB31D /* PAZCLDefineTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE4D027356456E84B274BFFCA71EB49C /* QHFetchAlbumPictureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D83338C2AF0672D8E7ACEBEB8BC05AFF /* QHFetchAlbumPictureDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -226,32 +230,34 @@
 		00DAA3538850119C2CF4EC9C9F679395 /* QHPopPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHPopPlugin.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHPopPlugin/QHPopPlugin.m; sourceTree = "<group>"; };
 		01CF3BE1AC12E6E5EDEB1163AD29583D /* QHNineBoxViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHNineBoxViewController.h; path = YYStudio_LoanSDK_All/QHLoanlib/scanNineBox/QHNineBoxViewController.h; sourceTree = "<group>"; };
 		02532A866AAB3E1E2B3F41BE7F8133BC /* QHPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHPlugin.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHPlugin.m; sourceTree = "<group>"; };
+		04B0C4480057F26CF81EF20D092AFA1B /* SendFailView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SendFailView.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/SendFailView.h; sourceTree = "<group>"; };
 		0512CA5E52A1B1E3E77FFDD8437D5238 /* QHUIWebViewNavigationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHUIWebViewNavigationDelegate.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHUIWebViewEngine/QHUIWebViewNavigationDelegate.h; sourceTree = "<group>"; };
 		0526FB5C553E8CDC27CBE313DE473EF5 /* QHLoanlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHLoanlib.h; path = YYStudio_LoanSDK_All/QHLoanlib/QHLoanlib.h; sourceTree = "<group>"; };
 		05F06701C3619BDE2BED71F93DAFADF7 /* UIFont+QH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+QH.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/UIFont+QH.m"; sourceTree = "<group>"; };
 		0645E45B78CAD7B91B4F2F01AF059C04 /* Pods-TestOCPodLib-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestOCPodLib-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0964FB64DA40C985A43D1E904957378E /* Pods-TestOCPodLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestOCPodLib.debug.xcconfig"; sourceTree = "<group>"; };
 		0B7CC456BA8AB9ED82EEFECD372B3D55 /* QHEGOCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHEGOCache.m; path = YYStudio_LoanSDK_All/QHLoanlib/QHCache/QHEGOCache.m; sourceTree = "<group>"; };
-		0B8C467FD6E44668C56C57A2CC61CEA0 /* PAFaceCheckHome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAFaceCheckHome.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/Toos/PAFaceCheckHome.h; sourceTree = "<group>"; };
+		0CA1C54C93F410FBC1CA482CA33DB31D /* PAZCLDefineTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAZCLDefineTool.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/Toos/PAZCLDefineTool.h; sourceTree = "<group>"; };
 		0D651A5BE4BE1E27BB20A458C3ADAFF6 /* QHBasicMessagePlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHBasicMessagePlugin.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHBasicMessage/QHBasicMessagePlugin.m; sourceTree = "<group>"; };
 		1215AC1D694835ADD37968FAA8A08CC5 /* UIColor+QH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+QH.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/UIColor+QH.h"; sourceTree = "<group>"; };
 		133C2C904A6D3AAED280943E31DAB30C /* QHTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHTimer.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHTimer.h; sourceTree = "<group>"; };
+		14E7405B48C78A8D6C33BE140228210E /* OCFTFaceDetect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCFTFaceDetect.framework; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTFaceDetect.framework; sourceTree = "<group>"; };
 		16798CF7C33013FFAB653CB15DFDBAE2 /* ViewController+QHMASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+QHMASAdditions.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/ViewController+QHMASAdditions.h"; sourceTree = "<group>"; };
+		182484CA868723510BF275D910E86391 /* PAPromptView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAPromptView.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PAPromptView.h; sourceTree = "<group>"; };
 		1C2E1E2D2ADB627F29AFEB52AB821B9B /* QHAlertManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHAlertManager.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHDialogsPlugin/QHAlertManager.h; sourceTree = "<group>"; };
 		1D95624A39DEF4F5AD0546F10CFBFAFA /* Pods-TestOCPodLib-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestOCPodLib-acknowledgements.plist"; sourceTree = "<group>"; };
 		1F2D46DF0A518AFB64D6EB6E54410D41 /* QHInvokedUrlCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHInvokedUrlCommand.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHInvokedUrlCommand.h; sourceTree = "<group>"; };
-		1F7BD83BCA0488873E84D44D2F6426B9 /* Webkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Webkit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Webkit.framework; sourceTree = DEVELOPER_DIR; };
-		2109B8FCF00A43FEEF1EA326B5BD291C /* SendFailView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = SendFailView.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/SendFailView.mm; sourceTree = "<group>"; };
 		22359C21383ED68B351CD18FA42FF2CD /* QHHandleOpenURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHHandleOpenURL.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHHandleOpenURL/QHHandleOpenURL.h; sourceTree = "<group>"; };
 		230448D81A568A0BCC08203F5AD6A17C /* QHCameraPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHCameraPlugin.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/QHCameraPlugin.h; sourceTree = "<group>"; };
 		231066357A7E4D6EAD6B2C96B68FD288 /* QHScanResultViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHScanResultViewController.h; path = YYStudio_LoanSDK_All/QHLoanlib/scanNineBox/QHScanResultViewController.h; sourceTree = "<group>"; };
 		233E3B85BB4CBE5D4039995DE2BB64B0 /* QHScanQRCodeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHScanQRCodeViewController.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHScanQRCodePlugin/QHScanQRCodeViewController.m; sourceTree = "<group>"; };
-		236A074817EF9FBF37EEE6A39004A0FE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		247848DAF28C2CFFA891951284F3C787 /* Pods-TestOCPodLib-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestOCPodLib-frameworks.sh"; sourceTree = "<group>"; };
+		24AB99F00327861FE3AA2E9DAF640811 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		26E59C4E98506DFFC1B39F3CA35DFF95 /* QHJSON_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHJSON_private.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/QHJSON_private.h; sourceTree = "<group>"; };
 		292F39EA70084F1E6B323C4182284FA9 /* QHUIWebViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHUIWebViewDelegate.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHUIWebViewEngine/QHUIWebViewDelegate.h; sourceTree = "<group>"; };
 		2AB0AD8A520B7834CC749339A690E6D5 /* UIView+QH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+QH.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/UIView+QH.h"; sourceTree = "<group>"; };
 		2AFFAD70367A02DB491868AA4EDD2527 /* QHScanResultCollectionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHScanResultCollectionCell.h; path = YYStudio_LoanSDK_All/QHLoanlib/scanNineBox/QHScanResultCollectionCell.h; sourceTree = "<group>"; };
+		2BF89C94B65BAF230C1CEEF0CB5B69AC /* OCFTFaceDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCFTFaceDetector.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTFaceDetect.framework/Headers/OCFTFaceDetector.h; sourceTree = "<group>"; };
 		2D4247440602AC60F8DF09438014F894 /* YYStudio_LoanSDK_All.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYStudio_LoanSDK_All.framework; path = YYStudio_LoanSDK_All.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E796244576CA91F35F20E67DBF7D3A0 /* QHLoanTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHLoanTools.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/QHLoanDoorTools/QHLoanTools.h; sourceTree = "<group>"; };
 		2ED81092F247E1E0B5338B6312AA6288 /* QHMASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHMASCompositeConstraint.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -259,26 +265,22 @@
 		3167D50F3ED4FCE17260E223610DEED2 /* QHWKWebViewEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHWKWebViewEngine.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHWKWebViewEngine/QHWKWebViewEngine.h; sourceTree = "<group>"; };
 		3445FFDBB64AA6CA6F323AB19AEEF3DF /* QHScanQrCodePlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHScanQrCodePlugin.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHScanQRCodePlugin/QHScanQrCodePlugin.m; sourceTree = "<group>"; };
 		3503A25ED2F1D3EAC0863D63FE5D123A /* NSBundle+QH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+QH.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/NSBundle+QH.h"; sourceTree = "<group>"; };
+		3611762AF687ADBD911F0B0E43033F3F /* Webkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Webkit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Webkit.framework; sourceTree = DEVELOPER_DIR; };
 		3944F889DA3C218C26554670FFD10258 /* QHUIWebViewNavigationDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHUIWebViewNavigationDelegate.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHUIWebViewEngine/QHUIWebViewNavigationDelegate.m; sourceTree = "<group>"; };
 		3AB5827DDD46C7E5376C68B76CF5597C /* QHCheckFaceFailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHCheckFaceFailViewController.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FaceRecognition/QHCheckFaceFailViewController.h; sourceTree = "<group>"; };
+		3EC2695168936C8CFC585D456D6D10AE /* PAZCLTools.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PAZCLTools.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/Toos/PAZCLTools.mm; sourceTree = "<group>"; };
 		40197BA7CB42BEF44A164E40CF92974A /* QHUserAgentUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHUserAgentUtil.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHUserAgentUtil.h; sourceTree = "<group>"; };
 		431F6F0352DD7461EE5851967285B293 /* NSLayoutConstraint+QHMASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+QHMASDebugAdditions.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/NSLayoutConstraint+QHMASDebugAdditions.m"; sourceTree = "<group>"; };
 		4397D7FBE8EA299810EA060E8D9A3902 /* ViewController+QHMASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+QHMASAdditions.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/ViewController+QHMASAdditions.m"; sourceTree = "<group>"; };
 		469057DC938CB1D4E7EFEAA52CF90F8D /* QHMASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHMASCompositeConstraint.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASCompositeConstraint.h; sourceTree = "<group>"; };
-		478305D9D755C1FCAC7A458078F938E3 /* OCFTFaceDetect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCFTFaceDetect.framework; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTFaceDetect.framework; sourceTree = "<group>"; };
 		4804C7E05A865AD16116D9BA1D138CAC /* QHMASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHMASLayoutConstraint.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASLayoutConstraint.m; sourceTree = "<group>"; };
-		49A9AB0B977E8DCCA9C2E9C212A760A4 /* PACircularRing.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PACircularRing.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PACircularRing.mm; sourceTree = "<group>"; };
 		49BDE3F834DCA67E35B0155C22D9BDFB /* QHPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHPlugin.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHPlugin.h; sourceTree = "<group>"; };
+		49D7038ED49CB4C9E21F700BF6E9FA81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		4A1B2AB5DC067FBAEDFB59ACF709D2F5 /* QHPlugin+Resources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QHPlugin+Resources.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHPlugin+Resources.m"; sourceTree = "<group>"; };
 		4A649C0B5EBB4A2E68CF24902BFB7901 /* QHUserAgentUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHUserAgentUtil.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHUserAgentUtil.m; sourceTree = "<group>"; };
-		4AB48A94974F248CB237108D61A07F57 /* myface.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = myface.bundle; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/myface.bundle; sourceTree = "<group>"; };
 		4B14CC96857189F2E47DF46F5A69573A /* View+QHMASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+QHMASShorthandAdditions.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/View+QHMASShorthandAdditions.h"; sourceTree = "<group>"; };
-		4B8F6E95C6A43A20887EB735887CC685 /* PABottomView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PABottomView.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PABottomView.h; sourceTree = "<group>"; };
-		4C99A94A60423F623251AF6F543C4DAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		4D365BFCD5867E343D31259FF531EC86 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
 		4FA16C8571DBEBE4E97FA6AEE3CAEAFB /* QHFetchFaceViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHFetchFaceViewController.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FetchFace/QHFetchFaceViewController.h; sourceTree = "<group>"; };
 		4FC47A1730E385505FC17CD077F47B1F /* QHDialogsPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHDialogsPlugin.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHDialogsPlugin/QHDialogsPlugin.m; sourceTree = "<group>"; };
-		4FF97D9217A32C049927BB288F485224 /* PAPromptView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAPromptView.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PAPromptView.h; sourceTree = "<group>"; };
 		5006258BC69F6A4C641100FE9E0AD28A /* QHPlugin+Resources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QHPlugin+Resources.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHPlugin+Resources.h"; sourceTree = "<group>"; };
 		5050D4D88855EB135E98973A1F48DEB2 /* QHMASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHMASUtilities.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASUtilities.h; sourceTree = "<group>"; };
 		509505D1149989A90A2E28B52ADE80B7 /* QHGradualHeadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHGradualHeadView.h; path = YYStudio_LoanSDK_All/QHLoanlib/scanNineBox/QHGradualHeadView.h; sourceTree = "<group>"; };
@@ -294,23 +296,26 @@
 		5A992A0707C636A89D609A13DC1BF614 /* QHGestureHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHGestureHandler.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHGestureHandler/QHGestureHandler.h; sourceTree = "<group>"; };
 		5BBB3C69D6C306ADE29E8578BB96C61A /* QHConfigParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHConfigParser.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHConfigParser.h; sourceTree = "<group>"; };
 		5C6EDCC84F156DC8ED7781E2989DAF1F /* QHMASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHMASConstraintMaker.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASConstraintMaker.m; sourceTree = "<group>"; };
+		5C6FE541D06C9259215CC7784587DBBC /* PABottomView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PABottomView.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PABottomView.h; sourceTree = "<group>"; };
 		5CBB7988317C76054B4DDB21105B9BF1 /* QHLocalStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHLocalStorage.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHLocalStorage/QHLocalStorage.m; sourceTree = "<group>"; };
 		5D5EB429EFB1FF35165AE6084EA60011 /* QHMASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHMASLayoutConstraint.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASLayoutConstraint.h; sourceTree = "<group>"; };
 		5DBD6C92A842BEEC90CFC246FA17438C /* QHContactsPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHContactsPlugin.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHContactsPlugin/QHContactsPlugin.m; sourceTree = "<group>"; };
-		5DDE9CA5404DBA86E3E55F1E4DF4BC43 /* PABottomView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PABottomView.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PABottomView.mm; sourceTree = "<group>"; };
 		5DE3F838F0FCB0BC206A1D5A0093F7EA /* QHAvailabilityDeprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHAvailabilityDeprecated.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHAvailabilityDeprecated.h; sourceTree = "<group>"; };
 		5E1CB3BADD307859F4AB946561F5C16E /* QHCameraImageHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHCameraImageHelper.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FetchFace/QHCameraImageHelper.m; sourceTree = "<group>"; };
-		5EAAAE033E47001CA0B86696330B6B20 /* PAZCLTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAZCLTools.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/Toos/PAZCLTools.h; sourceTree = "<group>"; };
 		5F1177666A5F95F04E52A5D4E3232B69 /* QHMASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHMASViewConstraint.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASViewConstraint.m; sourceTree = "<group>"; };
-		5F6D2298F718BDD99BB3F03200C537DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		6178FF38456289F14013C18E65E5646D /* Pods-TestOCPodLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestOCPodLib.release.xcconfig"; sourceTree = "<group>"; };
 		631FED4A0F31E0DF4352FC6539E6742E /* QHWhitelist.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHWhitelist.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHWhitelist.m; sourceTree = "<group>"; };
 		637D44C179334637056C541FBCA11021 /* QHContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHContact.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHContactsPlugin/QHContact.h; sourceTree = "<group>"; };
 		6400747A96A455221F9097A20E7B4C69 /* YYStudio_LoanSDK_All-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYStudio_LoanSDK_All-prefix.pch"; sourceTree = "<group>"; };
+		640866376E1022C6E73AE365C60A2F33 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		64CC9C5C15A936D1176C8B2B8F897A9C /* NSArray+QHMASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+QHMASAdditions.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/NSArray+QHMASAdditions.h"; sourceTree = "<group>"; };
+		66389D43FDC3E1F8CD74EBDEA4B114E2 /* PACircularRing.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PACircularRing.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PACircularRing.mm; sourceTree = "<group>"; };
+		67D87AD793D293A9BCA7583A22D2687A /* PABottomView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PABottomView.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PABottomView.mm; sourceTree = "<group>"; };
 		687A33C9A9709FDFD4043A7339CFC4A6 /* QHNavigationbarPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHNavigationbarPlugin.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHNavigationBarPlugin/QHNavigationbarPlugin.h; sourceTree = "<group>"; };
+		6AA115F0AACBDEA144989C4694D0139F /* PAFaceCheckHome.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PAFaceCheckHome.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/Toos/PAFaceCheckHome.mm; sourceTree = "<group>"; };
 		6AE68ADDCA8C07BEDD6E80E1084084F0 /* NSMutableDictionary+QH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+QH.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/NSMutableDictionary+QH.h"; sourceTree = "<group>"; };
 		6BA786E153A3F0420D287B5847AEE257 /* View+QHMASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+QHMASAdditions.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/View+QHMASAdditions.m"; sourceTree = "<group>"; };
+		6BD4746660F72A6E1BF0E5157F4AC569 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6D546B21597DF153226FBA8D214FC830 /* QHWebViewEngineProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHWebViewEngineProtocol.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHWebViewEngineProtocol.h; sourceTree = "<group>"; };
 		6DDFE60E4B9251D96E65EF5F4F88D9E4 /* QHLoanDoorBundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = QHLoanDoorBundle.bundle; path = YYStudio_LoanSDK_All/QHLoanlib/QHLoanDoorBundle.bundle; sourceTree = "<group>"; };
 		6E0B98DAA82EEE84FEC708801B6DEE10 /* FetchCardCameraCover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FetchCardCameraCover.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FetchCard/FetchCardCameraCover.h; sourceTree = "<group>"; };
@@ -318,6 +323,7 @@
 		6E855C074FC5175E2739AC42BD1E1E8E /* QHWhitelist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHWhitelist.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHWhitelist.h; sourceTree = "<group>"; };
 		6F38AAF4B9C53D6501C7EB4A1B83C280 /* NSMutableArray+QHQueueAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+QHQueueAdditions.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/NSMutableArray+QHQueueAdditions.m"; sourceTree = "<group>"; };
 		6FD1BEB02085D365C238BA4F30CE4CA2 /* QHNavigationbarPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHNavigationbarPlugin.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHNavigationBarPlugin/QHNavigationbarPlugin.m; sourceTree = "<group>"; };
+		7177FDE6E9FAFB7A649BFCABC6B5D829 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		72ACC0095861BFF1A3428D4E91DA97A8 /* QHPluginResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHPluginResult.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHPluginResult.m; sourceTree = "<group>"; };
 		72B0257CBF299531736E47E89842C5B5 /* QHScreenOrientationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHScreenOrientationDelegate.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHScreenOrientationDelegate.h; sourceTree = "<group>"; };
 		72F24A4367DFDB07C7A0146CAB3BCA98 /* QHGestureHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHGestureHandler.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHGestureHandler/QHGestureHandler.m; sourceTree = "<group>"; };
@@ -325,18 +331,19 @@
 		752B8F94AC97F28780E8CBB335BEE005 /* QHAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHAppDelegate.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHAppDelegate.m; sourceTree = "<group>"; };
 		75FB140B210D10C8D2397C90C2D98E75 /* QHMASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHMASViewConstraint.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASViewConstraint.h; sourceTree = "<group>"; };
 		78FDBCD336C4AB1A7EC32AAEDDF0BF63 /* YYStudio_LoanSDK_All.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYStudio_LoanSDK_All.modulemap; sourceTree = "<group>"; };
+		7A7A9C159B9067622AB759583C502464 /* SendFailView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = SendFailView.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/SendFailView.mm; sourceTree = "<group>"; };
 		7A996AE798CFE407AA4C14ABC0ABBD62 /* YYStudio_LoanSDK_All-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYStudio_LoanSDK_All-umbrella.h"; sourceTree = "<group>"; };
 		7AA3E59CA618575FC38AB6E1AE457833 /* QHNetFailView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHNetFailView.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHNetFailView.h; sourceTree = "<group>"; };
 		7B9A20798C899C738996D66A517BA7FD /* QHWKProcessPoolFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHWKProcessPoolFactory.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHWKWebViewEngine/QHWKProcessPoolFactory.m; sourceTree = "<group>"; };
 		7E40088100FFD903B7254105BC97B086 /* QHLoanDoor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHLoanDoor.h; path = YYStudio_LoanSDK_All/QHLoanlib/QHLoanDoor.h; sourceTree = "<group>"; };
 		7E9E94E0B15B12766557D8E2499A895A /* QHCommandQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHCommandQueue.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHCommandQueue.h; sourceTree = "<group>"; };
-		7EE448115F0B9654A5958049B2A1882B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7EEE300910C26755126E58DA054F27C1 /* PACircularRing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PACircularRing.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PACircularRing.h; sourceTree = "<group>"; };
 		7FAD804966294CDB4E86BAE672F0A29D /* QHCommandDelegateImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHCommandDelegateImpl.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHCommandDelegateImpl.m; sourceTree = "<group>"; };
 		7FEE9964CBFC8D8005B86F66076C0B17 /* QHFaceCheckDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHFaceCheckDelegate.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FaceRecognition/QHFaceCheckDelegate.h; sourceTree = "<group>"; };
 		800E230EC6DF1A9DF103D3204F676572 /* QHCommonPlugin.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = QHCommonPlugin.mm; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCommonPlugin/QHCommonPlugin.mm; sourceTree = "<group>"; };
+		803CB630E85FE431E673FCA6A4030608 /* PAPromptView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PAPromptView.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PAPromptView.mm; sourceTree = "<group>"; };
 		82435C13DFE91941728FE3BEB743C170 /* YYStudio_LoanSDK_All.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYStudio_LoanSDK_All.xcconfig; sourceTree = "<group>"; };
 		8382788CA29D853EA9DDB7F40765DCC6 /* QHGradualImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHGradualImage.h; path = YYStudio_LoanSDK_All/QHLoanlib/scanNineBox/QHGradualImage.h; sourceTree = "<group>"; };
+		869549C252858B616A35EECB10BA5C63 /* PAFaceCheckHome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAFaceCheckHome.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/Toos/PAFaceCheckHome.h; sourceTree = "<group>"; };
 		86BC1567E0563D9083B2CB7C3A420232 /* QHBasicProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHBasicProtocol.h; path = YYStudio_LoanSDK_All/QHLoanlib/QHBasicProtocol.h; sourceTree = "<group>"; };
 		86BE45495908D9D8A3D69068D0A8D39D /* QHBasicMessagePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHBasicMessagePlugin.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHBasicMessage/QHBasicMessagePlugin.h; sourceTree = "<group>"; };
 		87347A8080E842BFF17EA3B85F1D04CB /* QHCameraPlugin.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = QHCameraPlugin.mm; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/QHCameraPlugin.mm; sourceTree = "<group>"; };
@@ -345,15 +352,17 @@
 		87FA2E5137676D5D6029C56E2D46ED96 /* QHScanQrCodePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHScanQrCodePlugin.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHScanQRCodePlugin/QHScanQrCodePlugin.h; sourceTree = "<group>"; };
 		8830489A160EDEE9082198A8B3D0DDF3 /* NSLayoutConstraint+QHMASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+QHMASDebugAdditions.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/NSLayoutConstraint+QHMASDebugAdditions.h"; sourceTree = "<group>"; };
 		890089562D9B34051F55704AAAA24E7D /* QHMASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHMASViewAttribute.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASViewAttribute.m; sourceTree = "<group>"; };
-		8C668EC4C9EAE888DCE4AC4C3B900672 /* OCFTFaceDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCFTFaceDetector.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTFaceDetect.framework/Headers/OCFTFaceDetector.h; sourceTree = "<group>"; };
 		8DA9F796349BB2E60DC35EC6E5982184 /* QHContactsPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHContactsPlugin.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHContactsPlugin/QHContactsPlugin.h; sourceTree = "<group>"; };
 		8EAD2834DD74291FF6982820D7520DC8 /* QHConfigParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHConfigParser.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHConfigParser.m; sourceTree = "<group>"; };
 		8F5D7E68F02BDB90484F62F557DEC537 /* QHIntentAndNavigationFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHIntentAndNavigationFilter.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHIntentAndNavigationFilter/QHIntentAndNavigationFilter.m; sourceTree = "<group>"; };
 		9031DFBCF06EBE56410F26AD2017CC49 /* QHLightBlackView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHLightBlackView.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHScanQRCodePlugin/QHLightBlackView.h; sourceTree = "<group>"; };
+		91A8A9965758072E52DBB7985DD0FF17 /* PACircularRing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PACircularRing.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PACircularRing.h; sourceTree = "<group>"; };
+		928E5506DAEECFFCE47E68937D8B03E5 /* FaceRecognitionLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceRecognitionLib.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/FaceRecognitionLib.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93CC294792F8E9C9B465F8DF6F758E2F /* QHMasonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHMasonry.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMasonry.h; sourceTree = "<group>"; };
 		94926F69414AAB927EED0B61B359042B /* UIWebView+JavaScriptAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+JavaScriptAlert.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHUIWebViewEngine/UIWebView+JavaScriptAlert.m"; sourceTree = "<group>"; };
-		96CCDF1C378D5FC05E8CC3B82C3770B9 /* SendFailView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SendFailView.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/SendFailView.h; sourceTree = "<group>"; };
+		94DBA51DCC7B2F1FC7C76F0CAB0F62E1 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		97FAAEC635F4F4AE545A97C0E2FEE2B5 /* PAZCLTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAZCLTools.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/Toos/PAZCLTools.h; sourceTree = "<group>"; };
 		994ACB6F933C60DA3F4B6BC10BB3F129 /* QHWKProcessPoolFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHWKProcessPoolFactory.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHWKWebViewEngine/QHWKProcessPoolFactory.h; sourceTree = "<group>"; };
 		99BC72D4BA9F44F01357D216E2DDAFEC /* UIColor+QH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+QH.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/UIColor+QH.m"; sourceTree = "<group>"; };
 		9A2ED9C8E66DAE388808AA33CF2E9B2E /* Pods_TestOCPodLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TestOCPodLib.framework; path = "Pods-TestOCPodLib.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -366,25 +375,23 @@
 		A05B037A2AF92AD9BCF5F6848A40E6D0 /* QHURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHURLProtocol.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHURLProtocol.m; sourceTree = "<group>"; };
 		A32A4F4D09F0C7E621656E1A40D7013D /* QHViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHViewController.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHViewController.m; sourceTree = "<group>"; };
 		A3D9E581E85841B8B8CFCF984FEAB2B7 /* QHCheckFaceFailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHCheckFaceFailViewController.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FaceRecognition/QHCheckFaceFailViewController.m; sourceTree = "<group>"; };
+		A3DBF7C887EA59F30FFA1E00985BA998 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		A54151281A0AC5AD77D5B7F3DF27A5EA /* ACEFaceKit.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ACEFaceKit.bundle; path = YYStudio_LoanSDK_All/FaceRecognitionLib/ACEFaceKit.bundle; sourceTree = "<group>"; };
 		A6EF86206565BCD3054309256D1ADB4B /* QHEGOCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHEGOCache.h; path = YYStudio_LoanSDK_All/QHLoanlib/QHCache/QHEGOCache.h; sourceTree = "<group>"; };
 		A7F7D17AFB0B53EB4329ACA2B7F5D771 /* QHViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHViewController.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHViewController.h; sourceTree = "<group>"; };
 		AA53755041FFF4687C5C227CAD5D2ACE /* NSURLProtocol+WebKitSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLProtocol+WebKitSupport.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/QHInterceptProtocol/NSURLProtocol+WebKitSupport.m"; sourceTree = "<group>"; };
-		AA8C4EBED8C9A6C15FEC537E8B047E89 /* PAPromptView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PAPromptView.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/UI/PAPromptView.mm; sourceTree = "<group>"; };
-		AAD715E5C94A93D3B0150F0D47A94856 /* PAZCLTools.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PAZCLTools.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/Toos/PAZCLTools.mm; sourceTree = "<group>"; };
 		AD11B4006DC34732EBE2872BA4E8D486 /* View+QHMASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+QHMASAdditions.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/View+QHMASAdditions.h"; sourceTree = "<group>"; };
 		AE1A0E6F5BEDC07A28B9A1A23A361DFF /* QHUIWebViewEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHUIWebViewEngine.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHUIWebViewEngine/QHUIWebViewEngine.h; sourceTree = "<group>"; };
 		AED7F7EC78B6C4A17A1A2D42BC155175 /* QHAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHAppDelegate.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHAppDelegate.h; sourceTree = "<group>"; };
 		AFDDFD039E4637FDD56AD90198AB1763 /* QHContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHContact.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHContactsPlugin/QHContact.m; sourceTree = "<group>"; };
 		B004ED99E52A2D876DCBC29542300220 /* QHCheckFaceViewController.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = QHCheckFaceViewController.mm; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FaceRecognition/QHCheckFaceViewController.mm; sourceTree = "<group>"; };
 		B046686CD247BB415337A97CDEBC0ADE /* QHLoanTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHLoanTools.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/QHLoanDoorTools/QHLoanTools.m; sourceTree = "<group>"; };
-		B26FF2AD95C1FED8BEF69DE6FF8728D4 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		B29C29C72E84A24023F4EC4657CA7EA9 /* myface.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = myface.bundle; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/myface.bundle; sourceTree = "<group>"; };
 		B33262EB2CE9476C14A1C2658A625553 /* QHMASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHMASConstraint.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASConstraint.m; sourceTree = "<group>"; };
 		B938251814E06A3A13FE007639B33915 /* QHDialogsPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHDialogsPlugin.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHDialogsPlugin/QHDialogsPlugin.h; sourceTree = "<group>"; };
 		BAA78F4B9FE7994DCC2CEE856923B9AA /* QHAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHAvailability.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHAvailability.h; sourceTree = "<group>"; };
-		BB110A7360D34669A82FFD23123FFDBC /* PAFaceCheckHome.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PAFaceCheckHome.mm; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/Toos/PAFaceCheckHome.mm; sourceTree = "<group>"; };
 		BB82C32A237313932CCD06AEB615F972 /* QHCommonPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHCommonPlugin.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCommonPlugin/QHCommonPlugin.h; sourceTree = "<group>"; };
 		BBF2399ED6AC1AE3348E278D09FC3909 /* QHGradualHeadView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHGradualHeadView.m; path = YYStudio_LoanSDK_All/QHLoanlib/scanNineBox/QHGradualHeadView.m; sourceTree = "<group>"; };
-		BE272AB84EC0596D57A451EEAAF0C05A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		BF6BE87FB150F6C74650DDE47139F9B8 /* QHURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHURLProtocol.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHURLProtocol.h; sourceTree = "<group>"; };
 		C0117F09D903D312E64B91A2BAB5F1CB /* UIImage+QH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+QH.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/UIImage+QH.h"; sourceTree = "<group>"; };
 		C2B27FE6D9605F4ABD9B8199F2273876 /* QHFetchAlbumPictureDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHFetchAlbumPictureDelegate.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FetchAlbumPicture/QHFetchAlbumPictureDelegate.h; sourceTree = "<group>"; };
@@ -400,12 +407,12 @@
 		CEF8116252FBA8044BF9554BE34F3B6E /* UIImage+QH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+QH.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/UIImage+QH.m"; sourceTree = "<group>"; };
 		D0615CC3C02106314ECD9EDE00759647 /* FetchCardCameraCover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FetchCardCameraCover.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FetchCard/FetchCardCameraCover.m; sourceTree = "<group>"; };
 		D1FEC4D7D82FC7B28F38FC9CE536F4F7 /* Pods-TestOCPodLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TestOCPodLib.modulemap"; sourceTree = "<group>"; };
-		D2CFC02306B4C9EE1E1B2F99F9ACAA9D /* FaceRecognitionLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceRecognitionLib.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/FaceRecognitionLib.h; sourceTree = "<group>"; };
 		D312B325A456D2DCCFC72BBC49C72266 /* QHCommandDelegateImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHCommandDelegateImpl.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHCommandDelegateImpl.h; sourceTree = "<group>"; };
 		D333B3B75EDBBEB864669035B13308BB /* QHTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHTimer.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHTimer.m; sourceTree = "<group>"; };
 		D59449600CB14018A0EBBBDE20FF1531 /* QHGeoLocationPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHGeoLocationPlugin.h; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHGeoLocationPlugin/QHGeoLocationPlugin.h; sourceTree = "<group>"; };
 		D66165D6DA6B97621699ED2B7DAC39FE /* QHScanResultViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHScanResultViewController.m; path = YYStudio_LoanSDK_All/QHLoanlib/scanNineBox/QHScanResultViewController.m; sourceTree = "<group>"; };
 		D83338C2AF0672D8E7ACEBEB8BC05AFF /* QHFetchAlbumPictureDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHFetchAlbumPictureDelegate.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FetchAlbumPicture/QHFetchAlbumPictureDelegate.m; sourceTree = "<group>"; };
+		D87F0AA3726897BD8FA4D2B07A3AEDAE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		D902E83433C9FAC39F93BDD7B63A708A /* UIFont+QH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+QH.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/UIFont+QH.h"; sourceTree = "<group>"; };
 		D9DC809951BC6B55EC8537E896DD2D24 /* QHInterceptProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHInterceptProtocol.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/QHInterceptProtocol/QHInterceptProtocol.m; sourceTree = "<group>"; };
 		DA72ECDDFD8A4F97F806C21F69816E04 /* QHInvokedUrlCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHInvokedUrlCommand.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHInvokedUrlCommand.m; sourceTree = "<group>"; };
@@ -415,6 +422,7 @@
 		DE199C9551EA635C1E87A6D8B07ED223 /* NSMutableDictionary+QH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+QH.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/NSMutableDictionary+QH.m"; sourceTree = "<group>"; };
 		DECCAA98423B3C672B76A936E8F81DC5 /* QHAlertManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHAlertManager.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHDialogsPlugin/QHAlertManager.m; sourceTree = "<group>"; };
 		DFB3E427C257A0FEDD5409F2CF0A7623 /* NSFileManager+QH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+QH.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/Catogory/NSFileManager+QH.m"; sourceTree = "<group>"; };
+		DFC49BB077C8F1B4C4142A0CA92F3D8B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		E0287C7F48812CB041E92F1856587931 /* QHWKWebViewUIDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHWKWebViewUIDelegate.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHWKWebViewEngine/QHWKWebViewUIDelegate.h; sourceTree = "<group>"; };
 		E48AE34867A89A38805325EA4012A199 /* QHJSON_private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHJSON_private.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/QHJSON_private.m; sourceTree = "<group>"; };
 		E5FC3E6B01C16BA8882477BC64C8E0A7 /* QHCode_message.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHCode_message.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/QHInterceptProtocol/QHCode_message.h; sourceTree = "<group>"; };
@@ -422,13 +430,13 @@
 		E64882A26EFCB413F1D9C8A758D911BC /* QHCommandQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHCommandQueue.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHCommandQueue.m; sourceTree = "<group>"; };
 		E9A7EED960594262621BCC42801AC0D7 /* QHPlugin+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QHPlugin+Private.h"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/QHPlugin+Private.h"; sourceTree = "<group>"; };
 		EA101DB775084D8731CEDE90FC0F2C86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA9DFF105491403C98994D9ADF21DA0F /* PAZCLDefineTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAZCLDefineTool.h; path = YYStudio_LoanSDK_All/FaceRecognitionLib/OCFTSDK/Toos/PAZCLDefineTool.h; sourceTree = "<group>"; };
 		EC420AF3493B3C073C1C40382593711E /* NSArray+QHMASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+QHMASAdditions.m"; path = "YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/NSArray+QHMASAdditions.m"; sourceTree = "<group>"; };
 		ED8DF3304C187503BD6049AE955D87AE /* QHMASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHMASConstraintMaker.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/3rd/QHMasonry/QHMASConstraintMaker.h; sourceTree = "<group>"; };
 		EDE72892015F292B112FE2C326D1B327 /* QH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QH.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QH.h; sourceTree = "<group>"; };
 		EE3DB6697CB661C512F9031F178D4C93 /* QHLoanDoor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHLoanDoor.m; path = YYStudio_LoanSDK_All/QHLoanlib/QHLoanDoor.m; sourceTree = "<group>"; };
 		F06E3FF257D4070C553CAF80E4B7A33C /* QHFetchFaceViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHFetchFaceViewController.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHCameraPlugin/FetchFace/QHFetchFaceViewController.m; sourceTree = "<group>"; };
 		F31511BAC822D36FA97E3D9387B69954 /* QHGeoLocationPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHGeoLocationPlugin.m; path = YYStudio_LoanSDK_All/QHLoanlib/Plugins/QHGeoLocationPlugin/QHGeoLocationPlugin.m; sourceTree = "<group>"; };
+		F355D5ED707759929B994053604EA75B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
 		F36A1086ACDE538555DC6AC424D56FD5 /* QHCommandDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QHCommandDelegate.h; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Public/QHCommandDelegate.h; sourceTree = "<group>"; };
 		F567D05235411897FB068C7C816E4B46 /* YYStudio_LoanSDK_All-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYStudio_LoanSDK_All-dummy.m"; sourceTree = "<group>"; };
 		F739E25124BEADE907573786A8BB2938 /* QHWKWebViewUIDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QHWKWebViewUIDelegate.m; path = YYStudio_LoanSDK_All/QHLoanlib/CommonLayer/CordovaLib/Private/Plugins/QHWKWebViewEngine/QHWKWebViewUIDelegate.m; sourceTree = "<group>"; };
@@ -450,18 +458,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E41EA8194012CAEF8C177FB594AE3002 /* Frameworks */ = {
+		537D68801195D274A7397054830F65C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2191AA1806C54DDE04335507C9641D78 /* AssetsLibrary.framework in Frameworks */,
-				04F652408125B320ACBDE9FDF037FAA1 /* AVFoundation.framework in Frameworks */,
-				FAA8E61D7AE54F6363672C31557C9DB6 /* CoreGraphics.framework in Frameworks */,
-				60048FD0EA078BA98B414A627BE94B5A /* CoreVideo.framework in Frameworks */,
-				6AB08A54D45A79E5B123D7DAA208B51D /* Foundation.framework in Frameworks */,
-				A9E81036E8F666EC2E7DF944DF21F9FE /* QuartzCore.framework in Frameworks */,
-				594D784DF0C0A147E13AEF54E610D0B4 /* UIKit.framework in Frameworks */,
-				2754E9956C65F7D6B9F700D9B4DB7137 /* Webkit.framework in Frameworks */,
+				ADE075D263B246291E11D39A5E0CE03B /* Accelerate.framework in Frameworks */,
+				9C32B1EC972CBC7735B43816884B3A69 /* AssetsLibrary.framework in Frameworks */,
+				9DF1A6AE5719931234270B8941A08016 /* AVFoundation.framework in Frameworks */,
+				6A3479C863006CBDA0C7DA57446036F9 /* CoreGraphics.framework in Frameworks */,
+				61A230353534C40E70D22B3BFFC5FEDD /* CoreImage.framework in Frameworks */,
+				2F2EB438C4CF84A83B203057716CCABE /* CoreMedia.framework in Frameworks */,
+				2DDEF9BF8BCA6B3D81AD78A6580D662D /* CoreVideo.framework in Frameworks */,
+				AA8BF435CD612AEFD775293511139B96 /* Foundation.framework in Frameworks */,
+				85E6066935E6A32F1D8EAD030A7B675F /* QuartzCore.framework in Frameworks */,
+				7433468E243EF15C71513C854565B71D /* UIKit.framework in Frameworks */,
+				3CE2691252D9A3325D3E67860044DF9B /* Webkit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,10 +493,37 @@
 			path = "../Target Support Files/YYStudio_LoanSDK_All";
 			sourceTree = "<group>";
 		};
+		0C0E50035E6C6CC58C85C9C183DCEACD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DFC49BB077C8F1B4C4142A0CA92F3D8B /* Accelerate.framework */,
+				A3DBF7C887EA59F30FFA1E00985BA998 /* AssetsLibrary.framework */,
+				D87F0AA3726897BD8FA4D2B07A3AEDAE /* AVFoundation.framework */,
+				49D7038ED49CB4C9E21F700BF6E9FA81 /* CoreGraphics.framework */,
+				94DBA51DCC7B2F1FC7C76F0CAB0F62E1 /* CoreImage.framework */,
+				640866376E1022C6E73AE365C60A2F33 /* CoreMedia.framework */,
+				F355D5ED707759929B994053604EA75B /* CoreVideo.framework */,
+				6BD4746660F72A6E1BF0E5157F4AC569 /* Foundation.framework */,
+				7177FDE6E9FAFB7A649BFCABC6B5D829 /* QuartzCore.framework */,
+				24AB99F00327861FE3AA2E9DAF640811 /* UIKit.framework */,
+				3611762AF687ADBD911F0B0E43033F3F /* Webkit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		15F7C1FA5AC80D63D156DDC34B4FB3BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				6DDFE60E4B9251D96E65EF5F4F88D9E4 /* QHLoanDoorBundle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		376CA0F152234C387A50103105B62714 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A54151281A0AC5AD77D5B7F3DF27A5EA /* ACEFaceKit.bundle */,
+				B29C29C72E84A24023F4EC4657CA7EA9 /* myface.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -519,7 +557,7 @@
 		6EACE24F1D52113A0ABC4AA4EB61EA9D /* YYStudio_LoanSDK_All */ = {
 			isa = PBXGroup;
 			children = (
-				74395116E1EE2D51B31235B5A852AE43 /* FaceRecognitionLib */,
+				9B58B852FFEB23976B44F1FDF5810641 /* FaceRecognitionLib */,
 				92A5CCE04F3E250EF2DD7454DB01B88B /* QHLoanlib */,
 				013EB251B3199EB3CF64507C54242FE5 /* Support Files */,
 			);
@@ -527,43 +565,11 @@
 			path = YYStudio_LoanSDK_All;
 			sourceTree = "<group>";
 		};
-		74395116E1EE2D51B31235B5A852AE43 /* FaceRecognitionLib */ = {
-			isa = PBXGroup;
-			children = (
-				D2CFC02306B4C9EE1E1B2F99F9ACAA9D /* FaceRecognitionLib.h */,
-				8C668EC4C9EAE888DCE4AC4C3B900672 /* OCFTFaceDetector.h */,
-				4B8F6E95C6A43A20887EB735887CC685 /* PABottomView.h */,
-				5DDE9CA5404DBA86E3E55F1E4DF4BC43 /* PABottomView.mm */,
-				7EEE300910C26755126E58DA054F27C1 /* PACircularRing.h */,
-				49A9AB0B977E8DCCA9C2E9C212A760A4 /* PACircularRing.mm */,
-				0B8C467FD6E44668C56C57A2CC61CEA0 /* PAFaceCheckHome.h */,
-				BB110A7360D34669A82FFD23123FFDBC /* PAFaceCheckHome.mm */,
-				4FF97D9217A32C049927BB288F485224 /* PAPromptView.h */,
-				AA8C4EBED8C9A6C15FEC537E8B047E89 /* PAPromptView.mm */,
-				EA9DFF105491403C98994D9ADF21DA0F /* PAZCLDefineTool.h */,
-				5EAAAE033E47001CA0B86696330B6B20 /* PAZCLTools.h */,
-				AAD715E5C94A93D3B0150F0D47A94856 /* PAZCLTools.mm */,
-				96CCDF1C378D5FC05E8CC3B82C3770B9 /* SendFailView.h */,
-				2109B8FCF00A43FEEF1EA326B5BD291C /* SendFailView.mm */,
-				A98C9E5540916B762DE1BC7CADBD6CDE /* Frameworks */,
-				C48C3B28B7B0406A6934F9B12DD98F5F /* Resources */,
-			);
-			name = FaceRecognitionLib;
-			sourceTree = "<group>";
-		};
-		785553737B06AFC3DA711DDEB7D56194 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				993CC145C6584B478E10664D3252F2BB /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				785553737B06AFC3DA711DDEB7D56194 /* Frameworks */,
+				EB57DDB3388FBC701046A1E93218737F /* Frameworks */,
 				AAEC9B968368A3AF11111DB0C3264306 /* Pods */,
 				EFD4EE7C6C630DE10BB0D6A1C1A7E5C7 /* Products */,
 				5A12C7A12B995769573C468C5C72CFDC /* Targets Support Files */,
@@ -750,27 +756,28 @@
 			name = QHLoanlib;
 			sourceTree = "<group>";
 		};
-		993CC145C6584B478E10664D3252F2BB /* iOS */ = {
+		9B58B852FFEB23976B44F1FDF5810641 /* FaceRecognitionLib */ = {
 			isa = PBXGroup;
 			children = (
-				B26FF2AD95C1FED8BEF69DE6FF8728D4 /* AssetsLibrary.framework */,
-				236A074817EF9FBF37EEE6A39004A0FE /* AVFoundation.framework */,
-				5F6D2298F718BDD99BB3F03200C537DB /* CoreGraphics.framework */,
-				4D365BFCD5867E343D31259FF531EC86 /* CoreVideo.framework */,
-				7EE448115F0B9654A5958049B2A1882B /* Foundation.framework */,
-				BE272AB84EC0596D57A451EEAAF0C05A /* QuartzCore.framework */,
-				4C99A94A60423F623251AF6F543C4DAD /* UIKit.framework */,
-				1F7BD83BCA0488873E84D44D2F6426B9 /* Webkit.framework */,
+				928E5506DAEECFFCE47E68937D8B03E5 /* FaceRecognitionLib.h */,
+				2BF89C94B65BAF230C1CEEF0CB5B69AC /* OCFTFaceDetector.h */,
+				5C6FE541D06C9259215CC7784587DBBC /* PABottomView.h */,
+				67D87AD793D293A9BCA7583A22D2687A /* PABottomView.mm */,
+				91A8A9965758072E52DBB7985DD0FF17 /* PACircularRing.h */,
+				66389D43FDC3E1F8CD74EBDEA4B114E2 /* PACircularRing.mm */,
+				869549C252858B616A35EECB10BA5C63 /* PAFaceCheckHome.h */,
+				6AA115F0AACBDEA144989C4694D0139F /* PAFaceCheckHome.mm */,
+				182484CA868723510BF275D910E86391 /* PAPromptView.h */,
+				803CB630E85FE431E673FCA6A4030608 /* PAPromptView.mm */,
+				0CA1C54C93F410FBC1CA482CA33DB31D /* PAZCLDefineTool.h */,
+				97FAAEC635F4F4AE545A97C0E2FEE2B5 /* PAZCLTools.h */,
+				3EC2695168936C8CFC585D456D6D10AE /* PAZCLTools.mm */,
+				04B0C4480057F26CF81EF20D092AFA1B /* SendFailView.h */,
+				7A7A9C159B9067622AB759583C502464 /* SendFailView.mm */,
+				FEA0826ECB81A22A9EE628C689539D74 /* Frameworks */,
+				376CA0F152234C387A50103105B62714 /* Resources */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		A98C9E5540916B762DE1BC7CADBD6CDE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				478305D9D755C1FCAC7A458078F938E3 /* OCFTFaceDetect.framework */,
-			);
-			name = Frameworks;
+			name = FaceRecognitionLib;
 			sourceTree = "<group>";
 		};
 		AAEC9B968368A3AF11111DB0C3264306 /* Pods */ = {
@@ -781,12 +788,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C48C3B28B7B0406A6934F9B12DD98F5F /* Resources */ = {
+		EB57DDB3388FBC701046A1E93218737F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4AB48A94974F248CB237108D61A07F57 /* myface.bundle */,
+				0C0E50035E6C6CC58C85C9C183DCEACD /* iOS */,
 			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EFD4EE7C6C630DE10BB0D6A1C1A7E5C7 /* Products */ = {
@@ -798,6 +805,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FEA0826ECB81A22A9EE628C689539D74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14E7405B48C78A8D6C33BE140228210E /* OCFTFaceDetect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -805,7 +820,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8BF44D62CA5BD7D6ACAAE8964703A89 /* FaceRecognitionLib.h in Headers */,
+				0ECBF16B3308A2CFFCC350484902E1F1 /* FaceRecognitionLib.h in Headers */,
 				59247584FE2EAB5D0B927AAEB0D78547 /* FetchCardCameraCover.h in Headers */,
 				5FCFDE831CDFFB6D149E7F6D3DA9DD90 /* NSArray+QHMASAdditions.h in Headers */,
 				5D9DC1933E9216C3C65403EFF03E393B /* NSArray+QHMASShorthandAdditions.h in Headers */,
@@ -816,7 +831,7 @@
 				F85C463E141991D8D229F44A50DD3E8D /* NSMutableArray+QHQueueAdditions.h in Headers */,
 				84D61CBE409418E30800BA7F823580A4 /* NSMutableDictionary+QH.h in Headers */,
 				E44CC43939D7C34DA4E77EDFFF56DFD1 /* NSURLProtocol+WebKitSupport.h in Headers */,
-				BAF239B6DD62ACC52B602F7124595DCD /* OCFTFaceDetector.h in Headers */,
+				E14CF95BAC79B7CCCCD2865C24BBA55C /* OCFTFaceDetector.h in Headers */,
 				5EC2287A7B769A0E3B435B186F815092 /* PABottomView.h in Headers */,
 				1576CEBF995ABA200ACA2B7F8629EE71 /* PACircularRing.h in Headers */,
 				09B737F3C424BFE1343B112304AB6F62 /* PAFaceCheckHome.h in Headers */,
@@ -928,9 +943,9 @@
 			buildConfigurationList = 24BBD5CBBE120D28A9151964CD1B59B9 /* Build configuration list for PBXNativeTarget "YYStudio_LoanSDK_All" */;
 			buildPhases = (
 				C8A1C98D5040AC45D0D1790D9D6DBF2B /* Sources */,
-				E41EA8194012CAEF8C177FB594AE3002 /* Frameworks */,
+				537D68801195D274A7397054830F65C2 /* Frameworks */,
 				1B24D251BA17883DA65C3D553765AEB0 /* Headers */,
-				2D54B99CA788BB2ED7B292CFADF25A06 /* Resources */,
+				648DFFA2C78CB70732E9049F26937CCE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -987,12 +1002,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2D54B99CA788BB2ED7B292CFADF25A06 /* Resources */ = {
+		648DFFA2C78CB70732E9049F26937CCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D226E9573E70E983D3A0BC20DFEB90D /* myface.bundle in Resources */,
-				B8EEDCC8E9C7F890142E172509F16BD5 /* QHLoanDoorBundle.bundle in Resources */,
+				5C75A3AA23E9708DA8A4B463FEF58EF6 /* ACEFaceKit.bundle in Resources */,
+				CF79EA1BDE2FB6CFD5A5EAB126060290 /* myface.bundle in Resources */,
+				7F9F205B908F97A268425BA683E2CF53 /* QHLoanDoorBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

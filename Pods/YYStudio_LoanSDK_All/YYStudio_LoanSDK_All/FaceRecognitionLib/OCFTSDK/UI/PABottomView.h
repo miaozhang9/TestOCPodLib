@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, animationState){
 
 @interface PABottomView : UIView
 
-- (void)willChangeAnimation:(OCFTFaceDetectActionType)state outTime:(CGFloat)time;
+- (void)willChangeAnimation:(OCFTFaceDetectActionStep)state outTime:(CGFloat)time;
 -(void)initWithTheCountDown:(BOOL)countDown andTheFaceConter:(BOOL)faceConter;
 - (void)recovery;
 - (void)showPromtpView;

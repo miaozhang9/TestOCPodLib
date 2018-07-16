@@ -11,26 +11,6 @@
 
 typedef void (^PAFaceCheckBlock)(NSDictionary *content);
 
-/**
- *  全屏图片信息
- */
-struct PAFaceImageInfo{
-    
-    /** 是否包含人脸 */
-    bool has_face = false;
-    /** 左右旋转角度 */
-    float yaw = 0;
-    /** 上下旋转角度 */
-    float pitch = 0;
-    /** 运动模糊程度 */
-    float blurness_motion = 0;
-    /** 人脸位置 */
-    CGRect face_rect;
-    /** 亮度 */
-    float brightness = 0;
-    
-};
-
 
 
 
@@ -80,24 +60,3 @@ struct PAFaceImageInfo{
 - (id)initWithPAcheckWithTheCountdown :(BOOL)countDown andTheAdvertising:(NSString*)advertising  number0fAction:(NSString*)num voiceSwitch:(BOOL)voiceSwitch delegate:(id <PACheckDelegate>)faceDelegate;
 @end
 
-
-
-
-
-#pragma mark ------------ PAFaceInfo ------------
-/*!
- *  SDK返回宿主APP的图片类
- *  通过该类可获取对应的人脸图片及图片质量分值
- */
-@interface PAFaceInfo : NSObject
-
-/** 全屏图片*/
-@property (readonly) UIImage* image;
-
-/** 人脸图片*/
-@property (readonly) UIImage* faceImage;
-
-/** 全屏图片信息 具体参数见 PAFaceImageInfo */
-@property (readonly) PAFaceImageInfo imageInfo;
-
-@end

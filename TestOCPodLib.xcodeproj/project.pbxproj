@@ -14,6 +14,7 @@
 		9B1AB21420A5363F00FC9D1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1AB21320A5363F00FC9D1E /* Assets.xcassets */; };
 		9B1AB21720A5363F00FC9D1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1AB21520A5363F00FC9D1E /* LaunchScreen.storyboard */; };
 		9B1AB21A20A5363F00FC9D1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1AB21920A5363F00FC9D1E /* main.m */; };
+		9BC4A8A220FC937D002A1394 /* ACEFaceKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9BC4A8A120FC937D002A1394 /* ACEFaceKit.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9B1AB21620A5363F00FC9D1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B1AB21820A5363F00FC9D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B1AB21920A5363F00FC9D1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BC4A8A120FC937D002A1394 /* ACEFaceKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ACEFaceKit.bundle; path = Pods/YYStudio_LoanSDK_All/YYStudio_LoanSDK_All/FaceRecognitionLib/ACEFaceKit.bundle; sourceTree = "<group>"; };
 		D0F50AFF518117E3840AB01E /* Pods_TestOCPodLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestOCPodLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2E7324EB6E474471FE02C9 /* Pods-TestOCPodLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOCPodLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestOCPodLib/Pods-TestOCPodLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +57,7 @@
 		9B1AB1FE20A5363D00FC9D1E = {
 			isa = PBXGroup;
 			children = (
+				9BC4A8A120FC937D002A1394 /* ACEFaceKit.bundle */,
 				9B1AB20920A5363D00FC9D1E /* TestOCPodLib */,
 				9B1AB20820A5363D00FC9D1E /* Products */,
 				DFEE39697D804978334673B8 /* Pods */,
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC4A8A220FC937D002A1394 /* ACEFaceKit.bundle in Resources */,
 				9B1AB21720A5363F00FC9D1E /* LaunchScreen.storyboard in Resources */,
 				9B1AB21420A5363F00FC9D1E /* Assets.xcassets in Resources */,
 				9B1AB21220A5363D00FC9D1E /* Main.storyboard in Resources */,
@@ -356,7 +360,10 @@
 				DEVELOPMENT_TEAM = 5P7EY8HPBE;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestOCPodLib/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.PersonalCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "eb5ad6d0-c096-421a-b632-9d22b64566e2";
@@ -375,7 +382,10 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestOCPodLib/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.PersonalCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

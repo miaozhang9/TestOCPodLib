@@ -61,11 +61,10 @@
         
         dispatch_after(0.2, dispatch_get_main_queue(), ^{
            
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=Privacy"]];//隐私设置
-            
+             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+  
         });
-//         [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"prefs:root=LOCATION_SERVICES"]];
-//        [alertController dismissViewControllerAnimated:YES completion:nil];
+
     }];
 
     [alertController addAction:setAction];

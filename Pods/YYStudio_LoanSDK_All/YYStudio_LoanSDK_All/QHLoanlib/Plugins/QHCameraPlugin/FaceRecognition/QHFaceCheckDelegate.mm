@@ -212,13 +212,14 @@ static QHFaceCheckDelegate *delegate = nil;
  *  @param error        检测失败报错
  */
 //失败的report回调
-- (void)getPAcheckReport:(NSDictionary *)faceSingleReport error:(NSError *)error andThePAFaceCheckdelegate:(id)delegate{
+- (void)getPAcheckReport:(NSDictionary *)faceReport Image:(UIImage *)faceImage error:(NSError *)error {
     if (self.faceRecognitionComplete) {
         self.faceRecognitionComplete(NO, nil, nil, nil);
     }
 }
 
 // 失败回调
+
 - (void)getSinglePAcheckReport:(NSDictionary *)singleReport error:(NSError *)error andThePAFaceCheckdelegate:(id)delegate {
     if (self.faceRecognitionComplete) {
         self.faceRecognitionComplete(NO, nil, nil, nil);
@@ -226,8 +227,6 @@ static QHFaceCheckDelegate *delegate = nil;
 }
 
 - (void)sendImageToJSPicturePhoto:(UIImage *)picPhoto facePhoto:(UIImage *)facePhoto imageInfo:(NSDictionary *)info{
-
-    if (!picPhoto || !facePhoto) return ;
 
 //    __block NSString *picPhotoPath = @"";
 //    __block NSString *facePhotoPath = @"";

@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 //! Project version number for FaceRecognitionLib.
-FOUNDATION_EXPORT double FaceRecognitionLibVersionNumber;
-
-//! Project version string for FaceRecognitionLib.
-FOUNDATION_EXPORT const unsigned char FaceRecognitionLibVersionString[];
+//FOUNDATION_EXPORT double FaceRecognitionLibVersionNumber;
+//
+////! Project version string for FaceRecognitionLib.
+//FOUNDATION_EXPORT const unsigned char FaceRecognitionLibVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FaceRecognitionLib/PublicHeader.h>
 #import <YYStudio_LoanSDK_All/PAFaceCheckHome.h>

@@ -1,6 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 source 'https://github.com/CocoaPods/Specs.git'
-source 'http://10.11.180.29/mobileDevelopers/YZT-Loan-Pod-Spec.git'
+#source 'http://10.11.180.29/mobileDevelopers/YZT-Loan-Pod-Spec.git'
 
 #source 'https://github.com/miaozhang9/ZMSpecccc.git'
 platform :ios, '9.0'
@@ -16,7 +16,7 @@ target 'TestOCPodLib' do
 
 #pod 'YYStudio_LoanSDK'
 #pod 'YYStudio_ACFaceCheckSDK'
-pod 'YYStudio_LoanSDK_All'
+#pod 'YYStudio_LoanSDK_All'
 #pod 'YYStudio_LoanSDK_All/QHLoanlib'
 #pod 'YYStudio_LoanSDK_All/FaceRecognitionLib'
 
